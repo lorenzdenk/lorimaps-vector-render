@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <!-- walkability "Mittel": very few lines rising to the right (45°) (solid colour, lines run past the tile edge so neighbouring tiles join without seams) -->
+  <g stroke="#5b4a2e" stroke-width="1" stroke-linecap="butt" fill="none">
+    <path d="M-2,26 L26,-2 M-2,2 L2,-2 M22,26 L26,22"/>
+  </g>
+</svg>

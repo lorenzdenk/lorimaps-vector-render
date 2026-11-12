@@ -1,0 +1,7 @@
+# name; latitude; longitude; zoom   (preview views, 400x400 map pixels each)
+Frauenfeld; 47.5568; 8.8975; 16
+Weinfelden; 47.5680; 9.1040; 15
+Ottenberg; 47.5795; 9.1250; 14
+Romanshorn; 47.5650; 9.3780; 15
+Thurtal; 47.5600; 9.0000; 13
+Trail_Namen_Zoom14; -42.6818; 146.5417; 14

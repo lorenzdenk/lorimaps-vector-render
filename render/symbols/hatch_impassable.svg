@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7">
+  <!-- walkability "Kein Durchkommen": dense lines rising to the right and to the left (solid colour, lines run past the tile edge so neighbouring tiles join without seams) -->
+  <g stroke="#6a2020" stroke-width="0.9" stroke-linecap="butt" fill="none">
+    <path d="M-2,9 L9,-2 M-2,2 L2,-2 M5,9 L9,5"/>
+    <path d="M-2,-2 L9,9 M-2,5 L2,9 M5,-2 L9,2"/>
+  </g>
+</svg>

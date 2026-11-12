@@ -1,0 +1,61 @@
+nr;pattern;lon;lat;radius_km
+1;Organ Pipes;147.240;-42.893;3
+2;Coal Mines Historic;147.715;-42.990;3
+3;Waterfall Bay|Waterfall Bluff;147.950;-43.068;3
+4;Bivouac Bay|Canoe Bay;147.960;-43.130;4
+5;Cape Hauy;147.980;-43.140;6
+6;Cape Raoul;147.780;-43.200;8
+7;Fluted Cape;147.385;-43.375;3
+8;Labillardiere;147.150;-43.470;8
+9;South Cape Bay|South Coast Track;146.860;-43.610;5
+10;Duckhole;146.880;-43.370;4
+11;Lake Esperance;146.772;-43.226;3
+12;Hartz Peak;146.770;-43.220;4
+13;Airwalk|Tahune;146.725;-43.098;3
+14;Lady Barron Falls|Horseshoe Falls;146.680;-42.680;4
+15;Russell Falls;146.710;-42.675;2
+16;Tall Trees;146.700;-42.680;3
+17;Pandani Grove;146.580;-42.685;3
+18;Platypus Bay|Watersmeet|Larmairremener;146.165;-42.110;3
+19;Rufus;146.150;-42.100;9
+20;Shadow Lake;146.150;-42.100;9
+21;Echo Point|Overland Track;146.150;-42.080;5
+22;Franklin River;146.020;-42.210;3
+23;Donaghys;145.938;-42.195;2
+24;Nelson Falls;145.730;-42.100;3
+25;Kelly Basin;145.620;-42.270;9
+26;Hogarth;145.320;-42.160;3
+27;Montezuma;145.480;-41.890;7
+28;Huon Pine;145.080;-41.650;3
+29;Dove Lake Circuit;145.960;-41.660;3
+30;Enchanted;145.940;-41.595;3
+31;Crater Lake|Crater Falls|Wombat Pool|Lake Lilla|Overland Track;145.948;-41.646;1.1
+32;Cradle Mountain Summit|Cradle Mountain Track|Summit;145.950;-41.680;3
+33;Calcified Forest;143.887;-40.105;5
+34;^The Nut;145.300;-40.765;3
+35;@walks;145.9213;-41.0802;0.6
+36;Leven Canyon Lookout;146.010;-41.390;3
+37;Alum Cliffs;146.430;-41.530;3
+38;Archers Knob;146.600;-41.150;5
+39;@walks;147.2072;-41.3023;0.8
+40;Duck Reach;147.100;-41.450;3
+41;Tamar Island;147.080;-41.380;3
+42;Liffey Falls;146.770;-41.700;4
+43;Pine Lake;146.700;-41.730;3
+44;Meander Falls;146.550;-41.740;5
+45;Castle Rock;147.850;-39.970;6
+46;Trousers Point;148.040;-40.230;4
+47;Strzelecki;148.070;-40.210;5
+48;Goblin Forest;146.000;-42.000;300
+49;St Columba;147.920;-41.320;3
+50;Ralphs Falls;147.843;-41.312;3
+51;Evercreech;147.980;-41.420;6
+52;Apsley Waterhole|Apsley Gorge|Apsley;148.180;-41.860;5
+53;Friendly Beach;148.280;-41.990;5
+54;Cape Tourville;148.340;-42.120;3
+55;Wineglass Bay Lookout;148.290;-42.155;3
+56;Wineglass Bay|Hazards Beach|Isthmus|Hazards;148.290;-42.170;6
+57;loontitetermairrelehoiner;148.000;-41.500;300
+58;Bishop and Clerk|Bishop & Clerk;148.090;-42.580;6
+59;Painted Cliffs;148.070;-42.600;4
+60;Fossil Cliffs;148.070;-42.580;3

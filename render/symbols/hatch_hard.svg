@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+  <!-- walkability "Schwer": denser lines rising to the right (45°) (solid colour, lines run past the tile edge so neighbouring tiles join without seams) -->
+  <g stroke="#5b4a2e" stroke-width="1" stroke-linecap="butt" fill="none">
+    <path d="M-2,12 L12,-2 M-2,2 L2,-2 M8,12 L12,8"/>
+  </g>
+</svg>

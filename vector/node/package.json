@@ -1,0 +1,10 @@
+{
+  "name": "lorimaps-vector-tools",
+  "private": true,
+  "description": "Glyph generation and test rendering for the vector map",
+  "dependencies": {
+    "@maplibre/maplibre-gl-native": "^6.4.1",
+    "fontnik": "^0.7.4",
+    "sharp": "^0.34.0"
+  }
+}

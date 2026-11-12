@@ -1,0 +1,157 @@
+Code;Name;TASVEG-Gruppe;Fläche_km2;Einteilung_A_Waldgefühl;Einteilung_B_Begehbarkeit
+FAC;Improved pasture with native tree canopy;Modified land;58.8;0 weggelassen;0 weggelassen
+FAL;Agricultural land;Modified land;11519.4;0 weggelassen;0 weggelassen
+FMG;Marram grassland;Modified land;4.1;0 weggelassen;0 weggelassen
+FPE;Permanent easements;Modified land;82.4;0 weggelassen;0 weggelassen
+FPF;Pteridium esculentum fernland;Modified land;80.1;0 weggelassen;0 weggelassen
+FPH;Plantations for silviculture - hardwood;Modified land;1892.6;0 weggelassen;0 weggelassen
+FPS;Plantations for silviculture - softwood;Modified land;855.8;0 weggelassen;0 weggelassen
+FPU;Unverified plantations for silviculture;Modified land;242.3;0 weggelassen;0 weggelassen
+FRG;Regenerating cleared land;Modified land;757.8;0 weggelassen;0 weggelassen
+FSM;Spartina marshland;Modified land;4.8;0 weggelassen;0 weggelassen
+FUM;Extra-urban miscellaneous;Modified land;232.3;0 weggelassen;0 weggelassen
+FUR;Urban areas;Modified land;496.5;0 weggelassen;0 weggelassen
+FWU;Weed infestation;Modified land;140.6;0 weggelassen;0 weggelassen
+OAQ;Water, sea;Other natural environments;2199.5;0 weggelassen;0 weggelassen
+ORO;Lichen lithosere;Other natural environments;190.5;0 weggelassen;0 weggelassen
+OSM;Sand, mud;Other natural environments;132.2;0 weggelassen;0 weggelassen
+RCO;Coastal rainforest;Rainforest and related scrub;14.7;1 Regenwald;3 Schwer
+RFE;Rainforest fernland;Rainforest and related scrub;6.9;1 Regenwald;3 Schwer
+RHP;Lagarostrobos franklinii rainforest and scrub;Rainforest and related scrub;133.6;1 Regenwald;3 Schwer
+RKF;Athrotaxis selaginoides - Nothofagus gunnii short rainforest;Rainforest and related scrub;24.1;1 Regenwald;3 Schwer
+RKP;Athrotaxis selaginoides rainforest;Rainforest and related scrub;168.6;1 Regenwald;3 Schwer
+RML;Nothofagus - Leptospermum short rainforest;Rainforest and related scrub;770.6;1 Regenwald;3 Schwer
+RMS;Nothofagus - Phyllocladus short rainforest;Rainforest and related scrub;2362.3;1 Regenwald;3 Schwer
+RMT;Nothofagus - Atherosperma rainforest;Rainforest and related scrub;2278.1;1 Regenwald;2 Mittel
+RMU;Nothofagus rainforest (undifferentiated);Rainforest and related scrub;1213.0;1 Regenwald;2 Mittel
+RPF;Athrotaxis cupressoides - Nothofagus gunnii short rainforest;Rainforest and related scrub;24.1;1 Regenwald;3 Schwer
+RPP;Athrotaxis cupressoides rainforest;Rainforest and related scrub;15.3;1 Regenwald;3 Schwer
+NAR;Acacia melanoxylon forest on rises;Non eucalypt forest and woodland;187.1;2 Nasswald über Regenwald;2 Mittel
+WDR;Eucalyptus tasmaniensis forest over rainforest;Wet eucalypt forest and woodland;1122.9;2 Nasswald über Regenwald;3 Schwer
+WNR;Eucalyptus nitida forest over rainforest;Wet eucalypt forest and woodland;1011.0;2 Nasswald über Regenwald;3 Schwer
+WOR;Eucalyptus obliqua forest over rainforest;Wet eucalypt forest and woodland;874.7;2 Nasswald über Regenwald;3 Schwer
+WBR;Eucalyptus brookeriana wet forest;Wet eucalypt forest and woodland;104.9;3 Übriger Nasswald;2 Mittel
+WDA;Eucalyptus dalrympleana forest;Wet eucalypt forest and woodland;166.4;3 Übriger Nasswald;2 Mittel
+WDB;Eucalyptus tasmaniensis forest with broad-leaf shrubs;Wet eucalypt forest and woodland;918.1;3 Übriger Nasswald;2 Mittel
+WDL;Eucalyptus tasmaniensis forest over Leptospermum;Wet eucalypt forest and woodland;266.6;3 Übriger Nasswald;3 Schwer
+WDU;Eucalyptus tasmaniensis wet forest (undifferentiated);Wet eucalypt forest and woodland;625.8;3 Übriger Nasswald;2 Mittel
+WGK;Eucalyptus globulus King Island forest;Wet eucalypt forest and woodland;13.7;3 Übriger Nasswald;2 Mittel
+WGL;Eucalyptus globulus wet forest;Wet eucalypt forest and woodland;70.5;3 Übriger Nasswald;2 Mittel
+WNL;Eucalyptus nitida forest over Leptospermum;Wet eucalypt forest and woodland;1450.5;3 Übriger Nasswald;3 Schwer
+WNU;Eucalyptus nitida wet forest (undifferentiated);Wet eucalypt forest and woodland;296.8;3 Übriger Nasswald;2 Mittel
+WOB;Eucalyptus obliqua forest with broad-leaf shrubs;Wet eucalypt forest and woodland;1360.5;3 Übriger Nasswald;2 Mittel
+WOL;Eucalyptus obliqua forest over Leptospermum;Wet eucalypt forest and woodland;254.5;3 Übriger Nasswald;3 Schwer
+WOU;Eucalyptus obliqua wet forest (undifferentiated);Wet eucalypt forest and woodland;1748.4;3 Übriger Nasswald;2 Mittel
+WRE;Eucalyptus regnans forest;Wet eucalypt forest and woodland;626.3;3 Übriger Nasswald;2 Mittel
+WSU;Eucalyptus subcrenulata forest and woodland;Wet eucalypt forest and woodland;302.0;3 Übriger Nasswald;2 Mittel
+WVI;Eucalyptus viminalis wet forest;Wet eucalypt forest and woodland;85.5;3 Übriger Nasswald;2 Mittel
+DAC;Eucalyptus amygdalina coastal forest and woodland;Dry eucalypt forest and woodland;1491.6;4 Trockener Eukalyptuswald;1 Leicht
+DAD;Eucalyptus amygdalina forest and woodland on dolerite;Dry eucalypt forest and woodland;1558.1;4 Trockener Eukalyptuswald;1 Leicht
+DAM;Eucalyptus amygdalina forest on mudstone;Dry eucalypt forest and woodland;399.0;4 Trockener Eukalyptuswald;1 Leicht
+DAS;Eucalyptus amygdalina forest and woodland on sandstone;Dry eucalypt forest and woodland;397.4;4 Trockener Eukalyptuswald;1 Leicht
+DAZ;Eucalyptus amygdalina inland forest and woodland on Cainozoic deposits;Dry eucalypt forest and woodland;218.5;4 Trockener Eukalyptuswald;1 Leicht
+DBA;Eucalyptus barberi forest and woodland;Dry eucalypt forest and woodland;0.6;4 Trockener Eukalyptuswald;1 Leicht
+DCO;Eucalyptus coccifera forest and woodland;Dry eucalypt forest and woodland;1023.1;4 Trockener Eukalyptuswald;1 Leicht
+DCR;Eucalyptus cordata forest;Dry eucalypt forest and woodland;1.0;4 Trockener Eukalyptuswald;1 Leicht
+DDE;Eucalyptus tasmaniensis dry forest and woodland;Dry eucalypt forest and woodland;2567.2;4 Trockener Eukalyptuswald;1 Leicht
+DDP;Eucalyptus dalrympleana - Eucalyptus pauciflora forest and woodland;Dry eucalypt forest and woodland;96.1;4 Trockener Eukalyptuswald;1 Leicht
+DFP;Furneaux peppermint forest;Dry eucalypt forest and woodland;566.7;4 Trockener Eukalyptuswald;1 Leicht
+DGL;Eucalyptus globulus dry forest and woodland;Dry eucalypt forest and woodland;217.0;4 Trockener Eukalyptuswald;1 Leicht
+DGW;Eucalyptus gunnii woodland;Dry eucalypt forest and woodland;22.7;4 Trockener Eukalyptuswald;1 Leicht
+DKW;King Island eucalypt woodland;Dry eucalypt forest and woodland;22.3;4 Trockener Eukalyptuswald;1 Leicht
+DMO;Eucalyptus morrisbyi forest and woodland;Dry eucalypt forest and woodland;0.0;4 Trockener Eukalyptuswald;1 Leicht
+DMW;Midlands woodland complex;Dry eucalypt forest and woodland;11.9;4 Trockener Eukalyptuswald;1 Leicht
+DNI;Eucalyptus nitida dry forest and woodland;Dry eucalypt forest and woodland;448.3;4 Trockener Eukalyptuswald;1 Leicht
+DOB;Eucalyptus obliqua dry forest;Dry eucalypt forest and woodland;1714.3;4 Trockener Eukalyptuswald;2 Mittel
+DOV;Eucalyptus ovata forest and woodland;Dry eucalypt forest and woodland;166.6;4 Trockener Eukalyptuswald;1 Leicht
+DOW;Eucalyptus ovata heathy woodland;Dry eucalypt forest and woodland;4.6;4 Trockener Eukalyptuswald;1 Leicht
+DPD;Eucalyptus pauciflora forest and woodland on dolerite;Dry eucalypt forest and woodland;298.3;4 Trockener Eukalyptuswald;1 Leicht
+DPE;Eucalyptus perriniana forest and woodland;Dry eucalypt forest and woodland;0.2;4 Trockener Eukalyptuswald;1 Leicht
+DPO;Eucalyptus pauciflora forest and woodland not on dolerite;Dry eucalypt forest and woodland;98.8;4 Trockener Eukalyptuswald;1 Leicht
+DPU;Eucalyptus pulchella forest and woodland;Dry eucalypt forest and woodland;1336.6;4 Trockener Eukalyptuswald;1 Leicht
+DRI;Eucalyptus risdonii forest and woodland;Dry eucalypt forest and woodland;9.0;4 Trockener Eukalyptuswald;1 Leicht
+DRO;Eucalyptus rodwayi forest and woodland;Dry eucalypt forest and woodland;146.7;4 Trockener Eukalyptuswald;1 Leicht
+DSC;Eucalyptus amygdalina - Eucalyptus obliqua damp sclerophyll forest;Dry eucalypt forest and woodland;482.5;4 Trockener Eukalyptuswald;2 Mittel
+DSG;Eucalyptus sieberi forest and woodland on granite;Dry eucalypt forest and woodland;261.8;4 Trockener Eukalyptuswald;1 Leicht
+DSO;Eucalyptus sieberi forest and woodland not on granite;Dry eucalypt forest and woodland;371.3;4 Trockener Eukalyptuswald;1 Leicht
+DTD;Eucalyptus tenuiramis forest and woodland on dolerite;Dry eucalypt forest and woodland;159.9;4 Trockener Eukalyptuswald;1 Leicht
+DTG;Eucalyptus tenuiramis forest and woodland on granite;Dry eucalypt forest and woodland;42.0;4 Trockener Eukalyptuswald;1 Leicht
+DTO;Eucalyptus tenuiramis forest and woodland on sediments;Dry eucalypt forest and woodland;457.9;4 Trockener Eukalyptuswald;1 Leicht
+DVC;Eucalyptus viminalis - Eucalyptus globulus coastal forest and woodland;Dry eucalypt forest and woodland;49.7;4 Trockener Eukalyptuswald;1 Leicht
+DVF;Eucalyptus viminalis Furneaux forest and woodland;Dry eucalypt forest and woodland;23.7;4 Trockener Eukalyptuswald;1 Leicht
+DVG;Eucalyptus viminalis grassy forest and woodland;Dry eucalypt forest and woodland;1024.4;4 Trockener Eukalyptuswald;1 Leicht
+NAD;Acacia dealbata forest;Non eucalypt forest and woodland;409.1;5 Sonstiger Wald/Sumpfwald;2 Mittel
+NAF;Acacia melanoxylon swamp forest;Non eucalypt forest and woodland;106.0;5 Sonstiger Wald/Sumpfwald;3 Schwer
+NAL;Allocasuarina littoralis forest;Non eucalypt forest and woodland;12.8;5 Sonstiger Wald/Sumpfwald;2 Mittel
+NAV;Allocasuarina verticillata forest;Non eucalypt forest and woodland;128.8;5 Sonstiger Wald/Sumpfwald;1 Leicht
+NBA;Bursaria - Acacia woodland;Non eucalypt forest and woodland;182.7;5 Sonstiger Wald/Sumpfwald;1 Leicht
+NBS;Banksia serrata woodland;Non eucalypt forest and woodland;3.8;5 Sonstiger Wald/Sumpfwald;1 Leicht
+NCR;Callitris rhomboidea forest;Non eucalypt forest and woodland;10.2;5 Sonstiger Wald/Sumpfwald;1 Leicht
+NLA;Leptospermum scoparium - Acacia mucronata forest;Non eucalypt forest and woodland;108.2;5 Sonstiger Wald/Sumpfwald;3 Schwer
+NLE;Leptospermum forest;Non eucalypt forest and woodland;519.0;5 Sonstiger Wald/Sumpfwald;3 Schwer
+NLM;Leptospermum lanigerum - Melaleuca squarrosa swamp forest;Non eucalypt forest and woodland;126.6;5 Sonstiger Wald/Sumpfwald;3 Schwer
+NLN;Subalpine Leptospermum nitidum woodland;Non eucalypt forest and woodland;13.6;5 Sonstiger Wald/Sumpfwald;3 Schwer
+NME;Melaleuca ericifolia swamp forest;Non eucalypt forest and woodland;164.2;5 Sonstiger Wald/Sumpfwald;4 Kein Durchkommen
+SRF;Leptospermum with rainforest scrub;Scrub, heathland and coastal complexes;302.9;5 Sonstiger Wald/Sumpfwald;4 Kein Durchkommen
+AAP;Alkaline pans;Saltmarsh and wetland;0.9;6 Offenland/Hochland;2 Mittel
+AHF;Freshwater aquatic herbland;Saltmarsh and wetland;78.0;6 Offenland/Hochland;2 Mittel
+AHL;Lacustrine herbland;Saltmarsh and wetland;29.0;6 Offenland/Hochland;2 Mittel
+AHS;Saline aquatic herbland;Saltmarsh and wetland;10.9;6 Offenland/Hochland;2 Mittel
+ARS;Saline sedgeland / rushland;Saltmarsh and wetland;31.5;6 Offenland/Hochland;2 Mittel
+ASF;Freshwater aquatic sedgeland and rushland;Saltmarsh and wetland;72.6;6 Offenland/Hochland;2 Mittel
+ASP;Sphagnum peatland;Saltmarsh and wetland;50.0;6 Offenland/Hochland;2 Mittel
+ASS;Succulent saline herbland;Saltmarsh and wetland;34.9;6 Offenland/Hochland;2 Mittel
+AUS;Saltmarsh (undifferentiated);Saltmarsh and wetland;5.1;6 Offenland/Hochland;2 Mittel
+AWU;Wetland (undifferentiated);Saltmarsh and wetland;25.7;6 Offenland/Hochland;2 Mittel
+GCL;Lowland grassland complex;Native grassland;697.4;6 Offenland/Hochland;1 Leicht
+GHC;Coastal grass and herbfield;Native grassland;94.3;6 Offenland/Hochland;1 Leicht
+GPH;Highland Poa grassland;Native grassland;243.2;6 Offenland/Hochland;1 Leicht
+GPL;Lowland Poa labillardierei grassland;Native grassland;141.1;6 Offenland/Hochland;1 Leicht
+GRP;Rockplate grassland;Native grassland;2.8;6 Offenland/Hochland;1 Leicht
+GSL;Lowland grassy sedgeland;Native grassland;64.8;6 Offenland/Hochland;1 Leicht
+GTL;Lowland Themeda triandra grassland;Native grassland;75.5;6 Offenland/Hochland;1 Leicht
+HCH;Alpine coniferous heathland;Highland treeless vegetation;45.4;6 Offenland/Hochland;3 Schwer
+HCM;Cushion moorland;Highland treeless vegetation;27.0;6 Offenland/Hochland;1 Leicht
+HHE;Eastern alpine heathland;Highland treeless vegetation;683.1;6 Offenland/Hochland;1 Leicht
+HHW;Western alpine heathland;Highland treeless vegetation;125.3;6 Offenland/Hochland;1 Leicht
+HSE;Eastern alpine sedgeland;Highland treeless vegetation;333.1;6 Offenland/Hochland;1 Leicht
+HSW;Western alpine sedgeland/herbland;Highland treeless vegetation;63.9;6 Offenland/Hochland;1 Leicht
+MBE;Eastern buttongrass moorland;Moorland, sedgeland and rushland;207.3;6 Offenland/Hochland;2 Mittel
+MBP;Pure buttongrass moorland;Moorland, sedgeland and rushland;74.3;6 Offenland/Hochland;2 Mittel
+MBR;Sparse buttongrass moorland on slopes;Moorland, sedgeland and rushland;1495.7;6 Offenland/Hochland;2 Mittel
+MBS;Buttongrass moorland with emergent shrubs;Moorland, sedgeland and rushland;1325.5;6 Offenland/Hochland;2 Mittel
+MBU;Buttongrass moorland (undifferentiated);Moorland, sedgeland and rushland;221.8;6 Offenland/Hochland;2 Mittel
+MBW;Western buttongrass moorland;Moorland, sedgeland and rushland;1709.6;6 Offenland/Hochland;2 Mittel
+MDS;Subalpine Diplarrena latifolia rushland;Moorland, sedgeland and rushland;6.2;6 Offenland/Hochland;2 Mittel
+MGH;Highland grassy sedgeland;Moorland, sedgeland and rushland;206.7;6 Offenland/Hochland;2 Mittel
+MRR;Restionaceae rushland;Moorland, sedgeland and rushland;118.3;6 Offenland/Hochland;2 Mittel
+MSW;Western lowland sedgeland;Moorland, sedgeland and rushland;617.0;6 Offenland/Hochland;2 Mittel
+RFS;Nothofagus gunnii rainforest scrub;Rainforest and related scrub;20.3;6 Offenland/Hochland;4 Kein Durchkommen
+RKS;Athrotaxis selaginoides subalpine scrub;Rainforest and related scrub;92.4;6 Offenland/Hochland;4 Kein Durchkommen
+RKX;Highland rainforest scrub with dead Athrotaxis selaginoides;Rainforest and related scrub;93.7;6 Offenland/Hochland;4 Kein Durchkommen
+RPW;Athrotaxis cupressoides open woodland;Rainforest and related scrub;50.3;6 Offenland/Hochland;2 Mittel
+RSH;Highland low rainforest and scrub;Rainforest and related scrub;319.9;6 Offenland/Hochland;4 Kein Durchkommen
+SAL;Acacia longifolia coastal scrub;Scrub, heathland and coastal complexes;123.3;6 Offenland/Hochland;3 Schwer
+SBM;Banksia marginata wet scrub;Scrub, heathland and coastal complexes;26.3;6 Offenland/Hochland;4 Kein Durchkommen
+SBR;Broad-leaf scrub;Scrub, heathland and coastal complexes;149.1;6 Offenland/Hochland;3 Schwer
+SCA;Coastal scrub on alkaline sands;Scrub, heathland and coastal complexes;98.2;6 Offenland/Hochland;2 Mittel
+SCH;Coastal heathland;Scrub, heathland and coastal complexes;689.7;6 Offenland/Hochland;2 Mittel
+SCL;Heathland on calcareous substrates;Scrub, heathland and coastal complexes;1.8;6 Offenland/Hochland;2 Mittel
+SED;Eastern scrub on dolerite;Scrub, heathland and coastal complexes;2.4;6 Offenland/Hochland;2 Mittel
+SHS;Subalpine heathland;Scrub, heathland and coastal complexes;80.8;6 Offenland/Hochland;3 Schwer
+SHW;Wet heathland;Scrub, heathland and coastal complexes;264.8;6 Offenland/Hochland;3 Schwer
+SKA;Kunzea ambigua regrowth scrub;Scrub, heathland and coastal complexes;4.0;6 Offenland/Hochland;4 Kein Durchkommen
+SLG;Leptospermum glaucescens heathland and scrub;Scrub, heathland and coastal complexes;141.6;6 Offenland/Hochland;3 Schwer
+SLL;Leptospermum lanigerum scrub;Scrub, heathland and coastal complexes;89.8;6 Offenland/Hochland;4 Kein Durchkommen
+SLS;Leptospermum scoparium heathland and scrub;Scrub, heathland and coastal complexes;68.4;6 Offenland/Hochland;3 Schwer
+SMM;Melaleuca squamea heathland;Scrub, heathland and coastal complexes;154.6;6 Offenland/Hochland;4 Kein Durchkommen
+SMP;Melaleuca pustulata scrub;Scrub, heathland and coastal complexes;3.2;6 Offenland/Hochland;3 Schwer
+SMR;Melaleuca squarrosa scrub;Scrub, heathland and coastal complexes;213.8;6 Offenland/Hochland;4 Kein Durchkommen
+SRE;Eastern riparian scrub;Scrub, heathland and coastal complexes;23.8;6 Offenland/Hochland;3 Schwer
+SRH;Rookery halophytic herbland;Scrub, heathland and coastal complexes;11.1;6 Offenland/Hochland;2 Mittel
+SSC;Coastal scrub;Scrub, heathland and coastal complexes;137.5;6 Offenland/Hochland;3 Schwer
+SSK;Scrub complex on King Island;Scrub, heathland and coastal complexes;129.1;6 Offenland/Hochland;3 Schwer
+SSW;Western subalpine scrub;Scrub, heathland and coastal complexes;121.3;6 Offenland/Hochland;4 Kein Durchkommen
+SSZ;Spray zone coastal complex;Scrub, heathland and coastal complexes;5.6;6 Offenland/Hochland;2 Mittel
+SWR;Western regrowth complex;Scrub, heathland and coastal complexes;67.9;6 Offenland/Hochland;4 Kein Durchkommen
+SWW;Western wet scrub;Scrub, heathland and coastal complexes;1481.1;6 Offenland/Hochland;4 Kein Durchkommen
