@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Renders an OpenTopoMap-style raster MBTiles file for the region in render/region.env.
+# Builds the map of the region in render/region.env in the OpenTopoMap style: as vector tiles with a MapLibre style
+# (MODE=vector, see vector/) or as raster MBTiles (MODE=tiles, as in lorimaps-render).
 # Runs on Ubuntu 24.04 (laptop, WSL2, Docker or a GitHub Actions runner); uses sudo, apt and a local PostgreSQL.
 #
 # Options (environment variables):
@@ -43,7 +44,7 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -q --no-install-recommend
   postgresql-16-postgis-3 postgresql-contrib osm2pgsql osmium-tool \
   gdal-bin python3-gdal libgdal-dev python3-mapnik mapnik-utils \
   fonts-dejavu-core fonts-dejavu-extra fonts-unifont fonts-noto-core \
-  libdbd-pg-perl bc unzip zip sqlite3 build-essential python3-pil
+  libdbd-pg-perl bc unzip zip sqlite3 build-essential python3-pil python3-psycopg2 python3-numpy
 echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | sudo debconf-set-selections
 for pkg in fonts-roboto-unhinted fonts-open-sans ttf-mscorefonts-installer fonts-wine fonts-urw-base35 fonts-texgyre; do   # optional fonts
   sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -q --no-install-recommends "$pkg" || echo "WARN: $pkg not available"
@@ -396,6 +397,11 @@ SQL
   cat "$PLACES"
   python3 "$HERE/render_preview.py" --style opentopomap.xml --outdir "$OUT/preview" \
     --places "$PLACES" --fonts "${PREVIEW_FONTS:-dejavu,noto,roboto,opensans}" --only "${PREVIEW_PLACES:-}" --scale "$SCALE"
+elif [ "${MODE:-tiles}" = "vector" ]; then
+  step "Vector map"
+  WORK="$WORK" OUT="$OUT" NAME="$NAME" TITLE="$TITLE" BBOX="$BBOX" VECTOR_MAXZOOM="$VECTOR_MAXZOOM" \
+    HILLSHADE_MAXZOOM="$HILLSHADE_MAXZOOM" VECTOR_SCALE="$VECTOR_SCALE" VECTOR_FONT="$VECTOR_FONT" \
+    VECTOR_PREVIEW="${VECTOR_PREVIEW:-}" bash "$HERE/../vector/build.sh"
 else
   step "Rendering tiles"
   [ -n "${FONT:-}" ] && python3 "$HERE/render_preview.py" --style opentopomap.xml --set-font "$FONT"

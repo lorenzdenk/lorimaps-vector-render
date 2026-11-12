@@ -1,0 +1,33 @@
+{
+  "_comment": "Fonts of the vector map: for each font set of the OpenTopoMap style the font file used. The glyph files are made from these files, so only fonts whose licence allows redistribution in converted form (e.g. SIL Open Font License) belong here. Characters a font lacks come from the fallback font.",
+  "firasans": {
+    "label": "Fira Sans (SIL Open Font License; humanist sans similar to Trebuchet MS)",
+    "download": "https://raw.githubusercontent.com/google/fonts/main/ofl/firasans/",
+    "fallback": "/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf",
+    "default": "FiraSans-Regular.ttf",
+    "sets": {
+      "sans-book": "FiraSans-Regular.ttf",
+      "sans-condensed": "FiraSans-Regular.ttf",
+      "sans-oblique": "FiraSans-Italic.ttf",
+      "sans-condensed-oblique": "FiraSans-Italic.ttf",
+      "sans-condensed-bold": "FiraSans-Bold.ttf",
+      "sans-bold": "FiraSans-Bold.ttf",
+      "sans-extralight": "FiraSans-Light.ttf"
+    }
+  },
+  "dejavu": {
+    "label": "DejaVu Sans (as in the original OpenTopoMap)",
+    "download": "",
+    "fallback": "/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf",
+    "default": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "sets": {
+      "sans-book": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+      "sans-condensed": "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf",
+      "sans-oblique": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf",
+      "sans-condensed-oblique": "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf",
+      "sans-condensed-bold": "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf",
+      "sans-bold": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+      "sans-extralight": "/usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf"
+    }
+  }
+}

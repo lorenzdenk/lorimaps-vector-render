@@ -357,6 +357,15 @@ class Symbolizer:
             # <Placement> children: alternative positions tried in order when the first one is taken
             self.placements = [dict(c.attrib) for c in el if c.tag == "Placement"]
 
+    @staticmethod
+    def halved(sym, FRACTION=0.5):
+        """copy of a line symbolizer with half the width (and dashes that keep their length)"""
+        import copy
+        c = copy.copy(sym)
+        c.a = dict(sym.a)
+        c.a["stroke-width"] = repr(float(sym.a.get("stroke-width", 1.0)) * FRACTION)
+        return c
+
     def columns(self):
         cols = set()
         for _, text in self.parts:

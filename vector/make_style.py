@@ -24,7 +24,7 @@ import subprocess
 import sys
 
 from layers import GEOM_DRAW, placement, source_layer
-from mapnik_model import MapnikMap, parse_expr, to_maplibre, to_maplibre_value
+from mapnik_model import MapnikMap, Symbolizer, parse_expr, to_maplibre, to_maplibre_value
 
 K_TOP = 17          # the last zoom level OpenTopoMap has rules for; shown at all higher zooms too
 SVG_RATIO = 4       # SVG symbols are rendered this many times their size
@@ -139,8 +139,16 @@ class Sprite:
 # ---------------------------------------------------------------------------- symbolizers -> properties
 
 class Conv:
-    def __init__(self, m, scale, sprite):
+    def __init__(self, m, scale, sprite, fonts=None):
         self.m, self.f, self.sprite = m, scale, sprite
+        self.fonts = fonts          # entry of fonts.json: font set name -> font file; None = the style's own faces
+
+    def face(self, fontset, face_name=None):
+        """name of the glyph set (font stack) for a Mapnik font set"""
+        if self.fonts:
+            file = self.fonts["sets"].get(fontset, self.fonts["default"])
+            return os.path.splitext(os.path.basename(file))[0]
+        return self.m.fontsets.get(fontset, [face_name or "DejaVu Sans Book"])[0]
 
     def kind(self, s, point_layer):
         """(MapLibre kind, static part that cannot be data driven) of a symbolizer"""
@@ -172,7 +180,9 @@ class Conv:
                 a.get("allow-overlap") == "true",
                 r3(num(a.get("spacing"), 0.0)) if line else 0,
                 r3(num(a.get("max-char-angle-delta"), 22.5)) if line else 0,
-                r3(max(num(a.get("margin"), 0.0), num(a.get("minimum-distance"), 0.0) / 2)),
+                # margin = distance to any other label. minimum-distance / repeat-distance only concern repeats of
+                # the same text, which MapLibre thins out itself along lines (symbol-spacing)
+                r3(num(a.get("margin"), 0.0)),
                 r3(num(a.get("repeat-distance"), 0.0)),
             )
         if s.type == "Raster":
@@ -212,7 +222,7 @@ class Conv:
             return p
         if kind in ("text", "textline"):
             size = num(a.get("size"), 10.0)
-            face = self.m.fontsets.get(a.get("fontset-name"), [a.get("face-name", "DejaVu Sans Book")])[0]
+            face = self.face(a.get("fontset-name"), a.get("face-name"))
             parts = []
             for fmt, text in s.parts:
                 e = to_maplibre_value(parse_expr(text))
@@ -222,7 +232,7 @@ class Conv:
                 if "fill" in fmt:
                     opts["text-color"] = color(fmt["fill"])
                 if "fontset-name" in fmt or "face-name" in fmt:
-                    opts["text-font"] = ["literal", [self.m.fontsets.get(fmt.get("fontset-name"), [fmt.get("face-name", face)])[0]]]
+                    opts["text-font"] = ["literal", [self.face(fmt.get("fontset-name"), fmt.get("face-name", face))]]
                 parts.append((e, opts))
             if len(parts) == 1 and not parts[0][1]:
                 field = parts[0][0]
@@ -283,12 +293,19 @@ class Conv:
         if kind == "text":
             return {"text-allow-overlap": static[0], "text-padding": r3(static[3] * f + 1)}, {}
         if kind == "textline":
-            lay = {"symbol-placement": "line", "text-allow-overlap": static[0], "text-max-angle": static[2],
+            lay = {"symbol-placement": "line", "text-allow-overlap": static[0], "text-max-angle": ANGLE(static[2]),
                    "text-padding": r3(static[3] * f + 1),
                    # Mapnik spacing 0: one label per line
                    "symbol-spacing": max(1, r3((static[1] or static[4]) * f)) if (static[1] or static[4]) else 100000}
             return lay, {}
         return {}, {}
+
+
+def ANGLE(mapnik_delta):
+    """Mapnik limits the angle between two neighbouring characters (max-char-angle-delta). MapLibre adds up
+    all bends of the line within about one character and compares the sum, so lines with many small
+    bends (digitised paths) fail much sooner: allow twice as much."""
+    return max(5, min(90, r3(mapnik_delta * 2)))
 
 
 LAYOUT_PROPS = {"icon-image", "icon-size", "icon-rotate", "icon-offset", "text-field", "text-font", "text-size", "text-letter-spacing",
@@ -331,8 +348,8 @@ def lighten(value, amount):
     return value
 
 
-def build(m, plan, scale, sprite, kmin_first=0):
-    conv = Conv(m, scale, sprite)
+def build(m, plan, scale, sprite, fonts=None, kmin_first=0):
+    conv = Conv(m, scale, sprite, fonts)
     shade = hillshade_opacity(m)
     below_hillshade = bool(shade)
     plan_by = {p["name"]: p for p in plan["layers"]}
@@ -366,7 +383,17 @@ def build(m, plan, scale, sprite, kmin_first=0):
                 order = []
                 for r in style.rules:
                     count = {}
-                    for s in r.symbolizers:
+                    fills = [i for i, x in enumerate(r.symbolizers) if x.type in ("Polygon", "PolygonPattern")]
+                    todo = []
+                    for pos, s in enumerate(r.symbolizers):
+                        todo.append((pos, s))
+                        # An outline drawn BEFORE the fill of the same rule: Mapnik draws feature by feature, so each
+                        # fill covers the inner half of its own outline; the outer half stays visible, also on top of
+                        # an adjoining area drawn earlier (walls between buildings). Same picture: the outline below
+                        # the fills, plus the outline at half width on top of them for the shared edges.
+                        if s.type == "Line" and any(i > pos for i in fills):
+                            todo.append((max(fills) + 0.5, Symbolizer.halved(s, 0.25)))
+                    for pos, s in todo:
                         kind, static = conv.kind(s, point_layer)
                         if kind is None:
                             n_rules_skipped += 1
@@ -377,28 +404,31 @@ def build(m, plan, scale, sprite, kmin_first=0):
                         key = (kind, static, j, src_kind)
                         # two rules with the same filter at the same zoom would both draw: keep them in separate layers
                         n = 0
-                        while any(o.filter_text == r.filter_text and set(o.zooms()) & set(r.zooms()) for o, _ in groups.get(key + (n,), [])):
+                        while any(o.filter_text == r.filter_text and set(o.zooms()) & set(r.zooms()) for o, _, _ in groups.get(key + (n,), [])):
                             n += 1
                         key += (n,)
                         if key not in groups:
                             groups[key] = []
                             order.append(key)
-                        groups[key].append((r, s))
+                        groups[key].append((r, s, pos))
+                style_layers = []
                 for gi, key in enumerate(order):
                     kind, static, j, src_kind, n = key
                     ops = groups[key]
                     src = source_layer(l.name, src_kind, cls, len(p["classes"]))
                     runs = []     # [k_first, k_last, definition]
                     for k in range(max(cls[0], 0), min(cls[1], K_TOP) + 1):
-                        act = [(r, s) for r, s in ops if r.active(k)]
+                        act = [(r, s) for r, s, _ in ops if r.active(k)]
                         if not act:
                             continue
                         d = definition(conv, kind, static, act, style, k, types)
                         if runs and runs[-1][1] == k - 1 and runs[-1][2] == d:
                             runs[-1][1] = k
                         else:
-                            runs.append([k, k, d])
-                    for k0, k1, d in runs:
+                            # position in Mapnik's drawing order at this zoom: first rule and symbolizer of the group
+                            first = min((r.index, pos) for r, s, pos in ops if r.active(k))
+                            runs.append([k, k, d, first])
+                    for k0, k1, d, first in runs:
                         layer = {"id": f"{l.name}/{style.name}/{gi}-{kind}/{k0}" + (f"@{cls[0]}" if len(p['classes']) > 1 else ""),
                                  "type": ML_TYPE[kind], "source": "map", "source-layer": src}
                         if k0 > kmin_first:
@@ -412,10 +442,21 @@ def build(m, plan, scale, sprite, kmin_first=0):
                             # what the hillshade adds on flat ground (the hillshade tiles hold only the difference to it)
                             amount = shade[k0] * FLAT - 0.5
                             layer["paint"] = {key: (lighten(v, amount) if key in ("fill-color", "line-color") else v) for key, v in layer["paint"].items()}
-                        if ML_TYPE[kind] == "symbol":
-                            symbol_segments[-1].append(layer)
-                        else:
-                            geometry_layers.append(layer)
+                        # layers of different zoom ranges are never drawn together; within a range Mapnik's order
+                        # of symbolizers counts (e.g. the outline of a pattern fill on top of it)
+                        style_layers.append(((k0, first[1], first[0], gi), layer))
+                for _, layer in sorted(style_layers, key=lambda x: x[0]):
+                    if layer["type"] == "symbol" and len(symbol_segments) > 1:
+                        # Mapnik forgot all earlier labels at "clear-label-cache": what is drawn after it and may
+                        # overlap simply lies on top. Here it must then not push earlier labels away.
+                        lay = layer["layout"]
+                        for kind_ in ("icon", "text"):
+                            if lay.get(f"{kind_}-allow-overlap"):
+                                lay[f"{kind_}-ignore-placement"] = True
+                    if layer["type"] == "symbol":
+                        symbol_segments[-1].append(layer)
+                    else:
+                        geometry_layers.append(layer)
     return geometry_layers, symbol_segments, n_rules_skipped, shade
 
 
@@ -479,6 +520,7 @@ def main():
     ap.add_argument("--scale", type=float, default=1.28, help="size of lines, symbols and text relative to Mapnik on 256 px tiles")
     ap.add_argument("--maxzoom", type=int, default=14, help="last zoom level of the vector tiles")
     ap.add_argument("--raster-maxzoom", type=int, default=12)
+    ap.add_argument("--font", default="", help="font variant from fonts.json (default: the faces named in the Mapnik style)")
     ap.add_argument("--name", default="LoriMaps")
     ap.add_argument("--out", required=True, help="directory for style.json and sprite files")
     args = ap.parse_args()
@@ -491,7 +533,10 @@ def main():
                 l.type, l.table = "postgis", p["table"]
     os.makedirs(args.out, exist_ok=True)
     sprite = Sprite(args.symbols)
-    geometry_layers, symbol_segments, skipped, shade = build(m, plan, args.scale, sprite)
+    fonts = None
+    if args.font:
+        fonts = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts.json")))[args.font]
+    geometry_layers, symbol_segments, skipped, shade = build(m, plan, args.scale, sprite, fonts)
 
     # the background lies below the hillshade too; its opacity changes between zoom levels (paint: any zoom works)
     bg = color(m.a.get("background-color", "rgb(255,255,255)"))

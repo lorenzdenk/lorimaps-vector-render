@@ -1,0 +1,75 @@
+name: Build vector map
+
+# Builds the vector map of the regions in render/region.env: vector tiles, hillshade and relief tiles, style package.
+# Starts on every push that changes render/ or vector/ (or manually via "Run workflow").
+on:
+  push:
+    branches: [main]
+    paths: ['render/**', 'vector/**', '.github/workflows/vector-map.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vector-map
+  cancel-in-progress: true   # a newer push replaces the running build
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 355
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Free disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+          df -h /
+
+      - name: Software for glyphs and check pictures
+        run: |
+          sudo apt-get update -q
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -q --no-install-recommends \
+            xvfb libcurl4 libuv1 libjpeg-turbo8 libpng16-16t64 libwebp7 libicu74 libopengl0 libglx0 libegl1 libgl1-mesa-dri
+          cd vector/node && npm install --no-audit --no-fund
+
+      - name: Build
+        run: |
+          mkdir -p logs
+          set -o pipefail
+          ( while sleep 300; do bash render/push_logs.sh logs "run ${{ github.run_id }} running $(date -u +%H:%M)" render-logs || true; done ) &
+          source render/region.env
+          for r in $REGIONS; do
+            echo "########## region $r"
+            REGION=$r OUT=$GITHUB_WORKSPACE/out bash render/render.sh 2>&1 | tee -a logs/build.log
+          done
+          cp out/preview/*.png logs/ 2>/dev/null || true
+
+      - name: Release
+        run: |
+          cd out
+          # release files may have at most 2 GB: larger ones are cut into pieces (join them with "cat a.part* > a")
+          for f in *.mbtiles *.zip; do
+            if [ "$(stat -c %s "$f")" -gt 2000000000 ]; then split -b 1900m -d "$f" "$f.part" && rm "$f"; fi
+          done
+          ls -la | tee -a ../logs/build.log
+          tag="vector-${{ github.run_number }}"
+          gh release create "$tag" -R "$GITHUB_REPOSITORY" -t "Vector map $tag" \
+            -n "Vector tiles (*-vector.mbtiles), hillshade and relief colours as raster tiles, style package (*-style.zip: style.json, sprite, glyphs). Commit ${{ github.sha }}."
+          for f in *.mbtiles* *.zip*; do
+            for t in 1 2 3 4 5; do
+              gh release upload "$tag" "$f" -R "$GITHUB_REPOSITORY" --clobber && break
+              sleep $((t * 20))
+            done
+          done
+
+      - name: Publish logs
+        if: always()
+        run: bash render/push_logs.sh logs "run ${{ github.run_id }} ${{ job.status }}" render-logs

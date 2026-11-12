@@ -5,11 +5,11 @@ import psycopg2
 import export_tiles as ex
 from mapnik_model import MapnikMap
 style, plan, z, x, y = sys.argv[1], sys.argv[2], int(sys.argv[3]), int(sys.argv[4]), int(sys.argv[5])
-args = argparse.Namespace(kmin=0, kmax=2, maxzoom=14, buffer=128, simplify=1.0)
+args = argparse.Namespace(kmin=0, kmax=2, maxzoom=14, buffer=128, simplify=1.0, simplify_labels=10.0)
 ex.init_worker(style, plan, args)
 qs = ex.layer_queries(ex._m, ex._plan, z, args)
 x0, y0, x1, y1 = ex.tile_env(z, x, y); w = x1 - x0; b = w * args.buffer / ex.EXTENT
-prm = dict(x0=x0, y0=y0, x1=x1, y1=y1, bx0=x0 - b, by0=y0 - b, bx1=x1 + b, by1=y1 + b, tol=w / ex.EXTENT * args.simplify)
+prm = dict(x0=x0, y0=y0, x1=x1, y1=y1, bx0=x0 - b, by0=y0 - b, bx1=x1 + b, by1=y1 + b, tol=w / ex.EXTENT * args.simplify, tol_label=w / ex.EXTENT * args.simplify_labels)
 rows = []
 for db, lst in qs.items():
     cur = psycopg2.connect(dbname=db).cursor()

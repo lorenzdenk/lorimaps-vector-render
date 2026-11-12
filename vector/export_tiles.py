@@ -78,7 +78,12 @@ def layer_queries(m, plan, t, args):
                 env = "ST_MakeEnvelope(%(x0)s, %(y0)s, %(x1)s, %(y1)s, 3857)"
                 benv = "ST_MakeEnvelope(%(bx0)s, %(by0)s, %(bx1)s, %(by1)s, 3857)"
                 if kind == "geom":
-                    geom = f"ST_AsMVTGeom(ST_Simplify({g}, %(tol)s, true), {env}, {EXTENT}, {args.buffer}, true)" \
+                    # lines that only carry labels or symbols along them (no drawn line): smoother, so that labels
+                    # follow the general direction instead of every small bend
+                    only_labels = all(s.type in ("Text", "Markers") for r in rules for s in r.symbolizers
+                                      if (placement(s) if p["dims"] != [0] else "geom") == "geom")
+                    tol = "%(tol_label)s" if only_labels else "%(tol)s"
+                    geom = f"ST_AsMVTGeom(ST_Simplify({g}, {tol}, true), {env}, {EXTENT}, {args.buffer}, true)" \
                         if p["dims"] != [0] else f"ST_AsMVTGeom({g}, {env}, {EXTENT}, 0, false)"
                     box = benv if p["dims"] != [0] else env
                     q = (f"(SELECT COALESCE(ST_AsMVT(q, '{name}', {EXTENT}, 'geom'), ''::bytea) FROM ("
@@ -118,7 +123,8 @@ def render(tile):
         x0, y0, x1, y1 = tile_env(z, x, y)
         w = x1 - x0
         b = w * _args.buffer / EXTENT
-        prm = dict(x0=x0, y0=y0, x1=x1, y1=y1, bx0=x0 - b, by0=y0 - b, bx1=x1 + b, by1=y1 + b, tol=w / EXTENT * _args.simplify)
+        prm = dict(x0=x0, y0=y0, x1=x1, y1=y1, bx0=x0 - b, by0=y0 - b, bx1=x1 + b, by1=y1 + b, tol=w / EXTENT * _args.simplify,
+                   tol_label=w / EXTENT * _args.simplify_labels)
         data = b""
         for db, qs in _sql[z].items():
             if db not in _conns:
@@ -151,6 +157,7 @@ def main():
     ap.add_argument("--kmax", type=int, default=2, help="... t+kmax")
     ap.add_argument("--buffer", type=int, default=128, help="margin around a tile for lines and areas, in 1/4096 of the tile")
     ap.add_argument("--simplify", type=float, default=1.0, help="simplification tolerance in tile units (1/4096 of the tile)")
+    ap.add_argument("--simplify-labels", type=float, default=10.0, help="the same for lines that only carry labels")
     ap.add_argument("--processes", type=int, default=os.cpu_count())
     ap.add_argument("--name", default="map")
     ap.add_argument("--out", required=True)
