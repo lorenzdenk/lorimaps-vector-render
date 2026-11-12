@@ -301,19 +301,58 @@ def zoom_start(k, scale):
     return k - 1.5 + math.log2(scale)
 
 
+FLAT = 180.5 / 255     # grey value of flat ground in the hillshade (see raster_tiles.py)
+
+
+def hillshade_opacity(m):
+    """{k: opacity of the hillshade drawn at zoom level k}"""
+    out = {}
+    for l in m.layers:
+        if l.type == "gdal" and l.name.startswith("hillshade"):
+            for _, r in l.rules():
+                for s in r.symbolizers:
+                    if s.a.get("comp-op") == "grain-merge":
+                        for k in r.zooms():
+                            out[k] = num(s.a.get("opacity"), 1.0)
+    return out
+
+
+def lighten(value, amount):
+    """adds amount (0-1) to every colour in a paint value (plain colour or case expression)"""
+    if isinstance(value, str):
+        mm = re.match(r"rgba?\(([^)]+)\)", value)
+        if not mm:
+            return value
+        p = [x.strip() for x in mm.group(1).split(",")]
+        rgb = [min(255, max(0, round(float(c) + amount * 255))) for c in p[:3]]
+        return f"rgb({rgb[0]},{rgb[1]},{rgb[2]})" if len(p) < 4 else f"rgba({rgb[0]},{rgb[1]},{rgb[2]},{p[3]})"
+    if isinstance(value, list) and value and value[0] == "case":
+        return ["case"] + [v if i % 2 == 0 and i < len(value) - 2 else lighten(v, amount) for i, v in enumerate(value[1:])]
+    return value
+
+
 def build(m, plan, scale, sprite, kmin_first=0):
     conv = Conv(m, scale, sprite)
+    shade = hillshade_opacity(m)
+    below_hillshade = bool(shade)
     plan_by = {p["name"]: p for p in plan["layers"]}
     geometry_layers, symbol_segments, n_rules_skipped = [], [[]], 0
 
     for l in m.layers:
         if l.a.get("clear-label-cache") == "true":
             symbol_segments.append([])
+        if l.type == "gdal" and l.name.startswith("hillshade"):
+            below_hillshade = False
         if l.type == "gdal":
             # raster layers (relief colours, hillshade) come from raster tiles; see raster_tiles.py
+            # all layers of a group (relief-5000, relief-500, ... -> "relief") come from one raster source
             ks = l.zooms()
-            if ks:
-                geometry_layers.append({"_raster": l.name, "ks": ks, "style": l.styles[0]})
+            group = l.name.split("-")[0]
+            known = [g for g in geometry_layers if g.get("_raster") == group]
+            if known:
+                known[0]["ks"] = sorted(set(known[0]["ks"]) | set(ks))
+            elif ks:
+                geometry_layers.append({"_raster": group, "ks": ks})
             continue
         p = plan_by.get(l.name)
         if p is None:
@@ -369,11 +408,15 @@ def build(m, plan, scale, sprite, kmin_first=0):
                         if layer.get("maxzoom") == 0:
                             continue
                         layer.update(d)
+                        if below_hillshade and k0 in shade and "paint" in layer:
+                            # what the hillshade adds on flat ground (the hillshade tiles hold only the difference to it)
+                            amount = shade[k0] * FLAT - 0.5
+                            layer["paint"] = {key: (lighten(v, amount) if key in ("fill-color", "line-color") else v) for key, v in layer["paint"].items()}
                         if ML_TYPE[kind] == "symbol":
                             symbol_segments[-1].append(layer)
                         else:
                             geometry_layers.append(layer)
-    return geometry_layers, symbol_segments, n_rules_skipped
+    return geometry_layers, symbol_segments, n_rules_skipped, shade
 
 
 def case_of(pairs, default_last=True):
@@ -448,13 +491,22 @@ def main():
                 l.type, l.table = "postgis", p["table"]
     os.makedirs(args.out, exist_ok=True)
     sprite = Sprite(args.symbols)
-    geometry_layers, symbol_segments, skipped = build(m, plan, args.scale, sprite)
+    geometry_layers, symbol_segments, skipped, shade = build(m, plan, args.scale, sprite)
 
-    layers = [{"id": "background", "type": "background", "paint": {"background-color": color(m.a.get("background-color", "rgb(255,255,255)"))}}]
+    # the background lies below the hillshade too; its opacity changes between zoom levels (paint: any zoom works)
+    bg = color(m.a.get("background-color", "rgb(255,255,255)"))
+    if shade:
+        stops, last = [], None
+        for k in sorted(shade):
+            c = lighten(bg, shade[k] * FLAT - 0.5)
+            if c != last:
+                stops.append((k, c))
+                last = c
+        bg = stops[0][1] if len(stops) == 1 else ["step", ["zoom"], stops[0][1]] + [x for k, c in stops[1:] for x in (r3(zoom_start(k, args.scale)), c)]
+    layers = [{"id": "background", "type": "background", "paint": {"background-color": bg}}]
     for g in geometry_layers:
         if "_raster" in g:
             ks = g["ks"]
-            sym = g["style"].rules[0].symbolizers[0]
             layer = {"id": "raster/" + g["_raster"], "type": "raster", "source": "raster-" + g["_raster"],
                      "paint": {"raster-opacity": 1, "raster-fade-duration": 0, "raster-resampling": "linear"}}
             if ks[0] > 0:
@@ -488,6 +540,8 @@ def main():
     n = sprite.write(os.path.join(args.out, "sprite"), args.scale)
     fonts = sorted({f for l in layers for f in font_names(l)})
     json.dump(fonts, open(os.path.join(args.out, "fonts.json"), "w"))
+    # for raster_tiles.py --flat-shift of the relief colours
+    json.dump({"hillshade_opacity": shade, "flat": FLAT}, open(os.path.join(args.out, "raster.json"), "w"))
     kinds = {}
     for l in layers:
         kinds[l["type"]] = kinds.get(l["type"], 0) + 1

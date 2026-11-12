@@ -50,6 +50,11 @@ if msg:
 vec = Image.open(tmp).convert("RGB")
 os.remove(tmp)
 
+# how far apart the two pictures are in colour, ignoring fine detail (both reduced to 1/8)
+import numpy as np
+a8 = np.asarray(img.resize((w // 8, w // 8), Image.BOX), dtype=float)
+b8 = np.asarray(vec.resize((w // 8, w // 8), Image.BOX), dtype=float)
+print(f"mean colour raster {a8.mean(axis=(0, 1)).round(1)}, vector {b8.mean(axis=(0, 1)).round(1)}, mean difference {np.abs(a8 - b8).mean():.1f} of 255")
 both = Image.new("RGB", (2 * w + 12, w + 26), "white")
 both.paste(img, (0, 26))
 both.paste(vec, (w + 12, 26))
