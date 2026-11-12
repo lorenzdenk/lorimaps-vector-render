@@ -17,6 +17,8 @@ set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 USER="${USER:-$(id -un)}"   # not set in Docker
 source "$HERE/region.env"
+# data releases (TASVEG, LIST, hillshade, OSM cache) are those of the raster pipeline (read only from here)
+[ -n "${DATA_REPO:-}" ] && [ -n "${GITHUB_REPOSITORY:-}" ] && export GITHUB_REPOSITORY="$DATA_REPO"
 export TASVEG="${TASVEG:-0}"
 export OVERLAYS="${OVERLAYS:-}" LIST_PLUS="${LIST_PLUS:-0}" LIST_HYDRO="${LIST_HYDRO:-0}"   # with the walks overlay, giant trees and camp sites move from the map into it
 # ONLY_OVERLAYS="walks": render only these overlays, no base map (the base map of an earlier run stays)
