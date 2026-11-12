@@ -8,6 +8,7 @@
 #   SKIP_DATA=1  keep the database, DEM and water data of the previous run (same region!):
 #                only the style is fetched and patched again, then rendered. For style experiments.
 #   WORK=...     working directory (default ~/work), OUT=... output directory (default $WORK/out)
+#   PBF_FILE=... local OSM file (.osm.pbf) to clip instead of downloading PBF_URLS
 #
 # Data:  OpenStreetMap (Geofabrik extracts), Copernicus GLO-30 DEM (AWS open data),
 #        OSM water polygons (osmdata.openstreetmap.de)
@@ -46,13 +47,19 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -q --no-install-recommend
   postgresql-16-postgis-3 postgresql-contrib osm2pgsql osmium-tool \
   gdal-bin python3-gdal libgdal-dev python3-mapnik mapnik-utils \
   fonts-dejavu-core fonts-dejavu-extra fonts-unifont fonts-noto-core \
-  libdbd-pg-perl bc unzip zip sqlite3 build-essential python3-pil python3-psycopg2 python3-numpy
+  libdbd-pg-perl bc unzip zip sqlite3 build-essential python3-pil python3-psycopg2 python3-numpy \
+  librsvg2-bin
 echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | sudo debconf-set-selections
 for pkg in fonts-roboto-unhinted fonts-open-sans ttf-mscorefonts-installer fonts-wine fonts-urw-base35 fonts-texgyre; do   # optional fonts
   sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -q --no-install-recommends "$pkg" || echo "WARN: $pkg not available"
 done
 fi
 python3 -c "import mapnik; print('mapnik', mapnik.mapnik_version())"
+if [ "${MODE:-tiles}" = vector ]; then   # tools of vector/build.sh: check now, not after the data steps
+  for tool in rsvg-convert node zip; do
+    command -v "$tool" >/dev/null || { echo "ERROR: $tool is missing (needed for MODE=vector)"; exit 1; }
+  done
+fi
 
 # ---------------------------------------------------------------- style
 step "Getting OpenTopoMap style"
@@ -107,6 +114,12 @@ if [ -n "${GITHUB_TOKEN:-}" ] && [ -n "${GITHUB_REPOSITORY:-}" ]; then
       CACHED=""
     fi
   fi
+fi
+if [ -z "$CACHED" ] && [ -n "${PBF_FILE:-}" ]; then
+  # a local OSM file (laptop, tests): only clipped, nothing downloaded
+  sub "using local OSM file $PBF_FILE"
+  osmium extract -s smart -b "$BW,$BS,$BE,$BN" "$PBF_FILE" -o region.osm.pbf --overwrite
+  CACHED="$PBF_FILE"
 fi
 if [ -z "$CACHED" ]; then
   parts=()

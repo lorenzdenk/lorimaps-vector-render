@@ -21,6 +21,10 @@ A push that changes `render/` or `vector/` starts the workflow *Build vector map
 
 ## Using the result
 
+The app [lorimaps](https://github.com/lorenzdenk/lorimaps) reads these files offline: put them into its map folder
+(menu *Karte auswählen → Kartendateien importieren*, or by USB), or download them there directly from the newest
+release (*Offline-Karte herunterladen*). It points the placeholder addresses below to the files on the phone.
+
 `style.json` refers to its data with placeholder addresses, which the app answers from the files:
 
 | Address in the style | Comes from |
@@ -78,6 +82,7 @@ font files (`VECTOR_FONT` in `render/region.env`).
 
 ```
 REGION=test-hobart bash render/render.sh          # small area around Hobart, everything
+PBF_FILE=tasmania.osm.pbf REGION=test-hobart bash render/render.sh   # the same from a local OSM file (no download)
 cd vector/node && npm install
 xvfb-run -a node render.js <style dir> out.png 147.325 -42.885 13.36 450 450 2 \
     map=x-vector.mbtiles hillshade=x-hillshade.mbtiles relief=x-relief.mbtiles
