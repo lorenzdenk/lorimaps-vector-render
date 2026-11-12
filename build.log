@@ -1,0 +1,3304 @@
+
+===== 12:31:17 Installing software
+Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+Hit:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease
+Hit:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+fonts-dejavu-core is already the newest version (2.37-8).
+fonts-dejavu-core set to manually installed.
+fonts-dejavu-extra is already the newest version (2.37-8).
+fonts-dejavu-extra set to manually installed.
+bc is already the newest version (1.07.1-3ubuntu4).
+bc set to manually installed.
+unzip is already the newest version (6.0-28ubuntu4.1).
+zip is already the newest version (3.0-13ubuntu0.2).
+The following additional packages will be installed:
+  default-libmysqlclient-dev fonts-noto-mono gdal-data gdal-plugins
+  hdf5-helpers libaec-dev libaec0 libaom-dev libarmadillo-dev libarmadillo12
+  libarpack2-dev libarpack2t64 libblas-dev libblas3 libblosc-dev libblosc1
+  libboost-dev libboost-filesystem1.83.0 libboost-program-options1.83.0
+  libboost-python1.83.0 libboost-serialization1.83.0 libboost-thread1.83.0
+  libboost1.83-dev libcfitsio-dev libcfitsio10t64 libcurl4-openssl-dev
+  libdav1d-dev libdav1d7 libdbi-perl libde265-0 libde265-dev libdeflate-dev
+  libfreexl-dev libfreexl1 libfyba-dev libfyba0t64 libgdal34t64 libgeos-c1t64
+  libgeos-dev libgeos3.12.1t64 libgeotiff-dev libgeotiff5 libgif-dev libgif7
+  libhdf4-0-alt libhdf4-alt-dev libhdf5-103-1t64 libhdf5-cpp-103-1t64
+  libhdf5-dev libhdf5-fortran-102t64 libhdf5-hl-100t64 libhdf5-hl-cpp-100t64
+  libhdf5-hl-fortran-100t64 libheif-dev libimagequant0 libjbig-dev libjpeg-dev
+  libjpeg-turbo8-dev libjpeg8-dev libjson-c-dev libkml-dev libkmlbase1t64
+  libkmlconvenience1t64 libkmldom1t64 libkmlengine1t64 libkmlregionator1t64
+  libkmlxsd1t64 liblapack-dev liblapack3 liblerc-dev libltdl-dev liblzma-dev
+  libmapnik3.1t64 libminizip-dev libminizip1t64 libnetcdf-dev libnetcdf19t64
+  libodbccr2 libodbcinst2 libogdi-dev libogdi4.1 libopenjp2-7-dev libpng-dev
+  libpoppler-dev libpoppler-private-dev libpoppler134 libproj-dev libproj25
+  libqhull-dev libqhull-r8.0 libqhull8.0 libqhullcpp8.0 libraqm0 librsvg2-2
+  librttopo-dev librttopo1 libsfcgal1t64 libsharpyuv-dev libspatialite-dev
+  libspatialite8t64 libsqlite3-0 libsqlite3-dev libsuperlu-dev libsuperlu6
+  libsz2 libtiff-dev libtiffxx6 libtirpc-dev liburiparser-dev liburiparser1
+  libwebp-dev libwebpdecoder3 libx265-199 libx265-dev libxerces-c-dev
+  libxerces-c3.2t64 postgresql-16-postgis-3-scripts proj-data python3-cairo
+  python3-pyosmium unixodbc-common unixodbc-dev
+Suggested packages:
+  libgdal-grass libitpp-dev liblapack-doc libboost-doc libboost1.83-doc
+  libboost-atomic1.83-dev libboost-chrono1.83-dev libboost-container1.83-dev
+  libboost-context1.83-dev libboost-contract1.83-dev
+  libboost-coroutine1.83-dev libboost-date-time1.83-dev
+  libboost-exception1.83-dev libboost-fiber1.83-dev
+  libboost-filesystem1.83-dev libboost-graph-parallel1.83-dev
+  libboost-graph1.83-dev libboost-iostreams1.83-dev libboost-json1.83-dev
+  libboost-locale1.83-dev libboost-log1.83-dev libboost-math1.83-dev
+  libboost-mpi-python1.83-dev libboost-mpi1.83-dev libboost-nowide1.83-dev
+  libboost-numpy1.83-dev libboost-program-options1.83-dev
+  libboost-python1.83-dev libboost-random1.83-dev libboost-regex1.83-dev
+  libboost-serialization1.83-dev libboost-stacktrace1.83-dev
+  libboost-system1.83-dev libboost-test1.83-dev libboost-thread1.83-dev
+  libboost-timer1.83-dev libboost-type-erasure1.83-dev libboost-url1.83-dev
+  libboost-wave1.83-dev libboost1.83-tools-dev libmpfrc++-dev libntl-dev
+  libcurl4-doc libidn-dev libkrb5-dev libldap2-dev librtmp-dev libssh2-1-dev
+  libmldbm-perl libnet-daemon-perl libsql-statement-perl libgdal-doc
+  libgeotiff-epsg geotiff-bin libhdf4-doc hdf4-tools libhdf5-doc libtool-doc
+  liblzma-doc postgis netcdf-bin netcdf-doc ogdi-bin libfreetype-dev proj-bin
+  sqlite3-doc libsuperlu-doc libx265-doc libxerces-c-doc python3-pytest
+  python-pil-doc python-psycopg2-doc python3-shapely pyosmium-doc
+Recommended packages:
+  libcfitsio-doc proj-bin libpng-tools poppler-data librsvg2-common postgis
+  python3-olefile
+The following NEW packages will be installed:
+  build-essential default-libmysqlclient-dev fonts-noto-core fonts-noto-mono
+  fonts-unifont gdal-bin gdal-data gdal-plugins hdf5-helpers libaec-dev
+  libaec0 libaom-dev libarmadillo-dev libarmadillo12 libarpack2-dev
+  libarpack2t64 libblas-dev libblas3 libblosc-dev libblosc1 libboost-dev
+  libboost-filesystem1.83.0 libboost-program-options1.83.0
+  libboost-python1.83.0 libboost-serialization1.83.0 libboost-thread1.83.0
+  libboost1.83-dev libcfitsio-dev libcfitsio10t64 libcurl4-openssl-dev
+  libdav1d-dev libdav1d7 libdbd-pg-perl libdbi-perl libde265-0 libde265-dev
+  libdeflate-dev libfreexl-dev libfreexl1 libfyba-dev libfyba0t64 libgdal-dev
+  libgdal34t64 libgeos-c1t64 libgeos-dev libgeos3.12.1t64 libgeotiff-dev
+  libgeotiff5 libgif-dev libgif7 libhdf4-0-alt libhdf4-alt-dev
+  libhdf5-103-1t64 libhdf5-cpp-103-1t64 libhdf5-dev libhdf5-fortran-102t64
+  libhdf5-hl-100t64 libhdf5-hl-cpp-100t64 libhdf5-hl-fortran-100t64
+  libheif-dev libimagequant0 libjbig-dev libjpeg-dev libjpeg-turbo8-dev
+  libjpeg8-dev libjson-c-dev libkml-dev libkmlbase1t64 libkmlconvenience1t64
+  libkmldom1t64 libkmlengine1t64 libkmlregionator1t64 libkmlxsd1t64
+  liblapack-dev liblapack3 liblerc-dev libltdl-dev liblzma-dev libmapnik3.1t64
+  libminizip-dev libminizip1t64 libnetcdf-dev libnetcdf19t64 libodbccr2
+  libodbcinst2 libogdi-dev libogdi4.1 libopenjp2-7-dev libpng-dev
+  libpoppler-dev libpoppler-private-dev libpoppler134 libproj-dev libproj25
+  libqhull-dev libqhull-r8.0 libqhull8.0 libqhullcpp8.0 libraqm0 librsvg2-2
+  librsvg2-bin librttopo-dev librttopo1 libsfcgal1t64 libsharpyuv-dev
+  libspatialite-dev libspatialite8t64 libsuperlu-dev libsuperlu6 libsz2
+  libtiff-dev libtiffxx6 libtirpc-dev liburiparser-dev liburiparser1
+  libwebp-dev libwebpdecoder3 libx265-199 libx265-dev libxerces-c-dev
+  libxerces-c3.2t64 mapnik-utils osm2pgsql osmium-tool postgresql-16-postgis-3
+  postgresql-16-postgis-3-scripts postgresql-contrib proj-data python3-cairo
+  python3-gdal python3-mapnik python3-numpy python3-pil python3-psycopg2
+  python3-pyosmium unixodbc-common unixodbc-dev
+The following packages will be upgraded:
+  libsqlite3-0 libsqlite3-dev sqlite3
+3 upgraded, 137 newly installed, 0 to remove and 45 not upgraded.
+Need to get 113 MB of archives.
+After this operation, 664 MB of additional disk space will be used.
+Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+Get:2 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libsqlite3-dev amd64 3.45.1-1ubuntu2.9 [911 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 sqlite3 amd64 3.45.1-1ubuntu2.9 [144 kB]
+Get:4 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libsqlite3-0 amd64 3.45.1-1ubuntu2.9 [702 kB]
+Get:5 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 build-essential amd64 12.10ubuntu1 [4928 B]
+Get:6 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 default-libmysqlclient-dev amd64 1.1.0build1 [3132 B]
+Get:7 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-noto-mono all 20201225-2 [435 kB]
+Get:8 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-noto-core all 20201225-2 [13.3 MB]
+Get:9 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libblas3 amd64 3.12.0-3build1.1 [238 kB]
+Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 liblapack3 amd64 3.12.0-3build1.1 [2646 kB]
+Get:12 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 python3-numpy amd64 1:1.26.4+ds-6ubuntu1 [4437 kB]
+Get:13 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 gdal-data all 3.8.4+dfsg-3ubuntu3 [261 kB]
+Get:14 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 gdal-plugins amd64 3.8.4+dfsg-3ubuntu3 [24.8 kB]
+Get:15 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libaec0 amd64 1.1.2-1build1 [22.9 kB]
+Get:16 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libarpack2t64 amd64 3.9.1-1.1build2 [106 kB]
+Get:17 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libsuperlu6 amd64 6.0.1+dfsg1-1build1 [180 kB]
+Get:18 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libarmadillo12 amd64 1:12.6.7+dfsg-1build2 [106 kB]
+Get:19 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libblosc1 amd64 1.21.5+ds-1build1 [36.2 kB]
+Get:20 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libcfitsio10t64 amd64 4.3.1-1.1build2 [528 kB]
+Get:21 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 libminizip1t64 amd64 1:1.3.dfsg-3.1ubuntu2.3 [22.2 kB]
+Get:22 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libfreexl1 amd64 2.0.0-1build2 [41.7 kB]
+Get:23 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libfyba0t64 amd64 4.1.1-11build1 [119 kB]
+Get:24 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libgeos3.12.1t64 amd64 3.12.1-3build1 [849 kB]
+Get:25 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libgeos-c1t64 amd64 3.12.1-3build1 [94.5 kB]
+Get:26 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 proj-data all 9.4.0-1build2 [7885 kB]
+Get:27 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libproj25 amd64 9.4.0-1build2 [1396 kB]
+Get:28 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libgeotiff5 amd64 1.7.1-5build1 [62.9 kB]
+Get:29 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgif7 amd64 5.2.2-1ubuntu1.2 [35.6 kB]
+Get:30 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libhdf4-0-alt amd64 4.2.16-4build1 [282 kB]
+Get:31 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libsz2 amd64 1.1.2-1build1 [5476 B]
+Get:32 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libhdf5-103-1t64 amd64 1.10.10+repack-3.1ubuntu4 [1270 kB]
+Get:33 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 liburiparser1 amd64 0.9.7+dfsg-2build1 [35.8 kB]
+Get:34 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libkmlbase1t64 amd64 1.3.0-12build1 [49.9 kB]
+Get:35 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libkmldom1t64 amd64 1.3.0-12build1 [156 kB]
+Get:36 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libkmlengine1t64 amd64 1.3.0-12build1 [71.4 kB]
+Get:37 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libhdf5-hl-100t64 amd64 1.10.10+repack-3.1ubuntu4 [56.0 kB]
+Get:38 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libnetcdf19t64 amd64 1:4.9.2-5ubuntu4 [473 kB]
+Get:39 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 unixodbc-common all 2.3.12-1ubuntu0.24.04.1 [8806 B]
+Get:40 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libodbcinst2 amd64 2.3.12-1ubuntu0.24.04.1 [30.7 kB]
+Get:41 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libogdi4.1 amd64 4.1.1+ds-3build1 [226 kB]
+Get:42 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpoppler134 amd64 24.02.0-1ubuntu9.11 [1118 kB]
+Get:43 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libqhull-r8.0 amd64 2020.2-6build1 [193 kB]
+Get:44 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 librttopo1 amd64 1.1.0-3build2 [191 kB]
+Get:45 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libspatialite8t64 amd64 5.1.0-3build1 [1919 kB]
+Get:46 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libxerces-c3.2t64 amd64 3.2.4+debian-1.2ubuntu2 [919 kB]
+Get:47 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libgdal34t64 amd64 3.8.4+dfsg-3ubuntu3 [8346 kB]
+Get:48 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 python3-gdal amd64 3.8.4+dfsg-3ubuntu3 [754 kB]
+Get:49 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 gdal-bin amd64 3.8.4+dfsg-3ubuntu3 [277 kB]
+Get:50 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 hdf5-helpers amd64 1.10.10+repack-3.1ubuntu4 [15.8 kB]
+Get:51 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libaom-dev amd64 3.8.2-2ubuntu0.2 [2266 kB]
+Get:52 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libblas-dev amd64 3.12.0-3build1.1 [170 kB]
+Get:53 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 liblapack-dev amd64 3.12.0-3build1.1 [5196 kB]
+Get:54 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libarpack2-dev amd64 3.9.1-1.1build2 [122 kB]
+Get:55 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libhdf5-fortran-102t64 amd64 1.10.10+repack-3.1ubuntu4 [85.2 kB]
+Get:56 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libhdf5-hl-fortran-100t64 amd64 1.10.10+repack-3.1ubuntu4 [31.5 kB]
+Get:57 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libhdf5-cpp-103-1t64 amd64 1.10.10+repack-3.1ubuntu4 [128 kB]
+Get:58 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libhdf5-hl-cpp-100t64 amd64 1.10.10+repack-3.1ubuntu4 [11.2 kB]
+Get:59 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libjpeg-turbo8-dev amd64 2.1.5-2ubuntu2 [295 kB]
+Get:60 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libjpeg8-dev amd64 8c-2ubuntu11 [1484 B]
+Get:61 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libjpeg-dev amd64 8c-2ubuntu11 [1482 B]
+Get:62 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libaec-dev amd64 1.1.2-1build1 [19.8 kB]
+Get:63 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libcurl4-openssl-dev amd64 8.5.0-2ubuntu10.16 [447 kB]
+Get:64 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libhdf5-dev amd64 1.10.10+repack-3.1ubuntu4 [2777 kB]
+Get:65 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libsuperlu-dev amd64 6.0.1+dfsg1-1build1 [20.7 kB]
+Get:66 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libarmadillo-dev amd64 1:12.6.7+dfsg-1build2 [409 kB]
+Get:67 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libblosc-dev amd64 1.21.5+ds-1build1 [43.7 kB]
+Get:68 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libboost1.83-dev amd64 1.83.0-2.1ubuntu3.2 [10.7 MB]
+Get:69 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libboost-dev amd64 1.83.0.1ubuntu2 [4308 B]
+Get:70 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libboost-filesystem1.83.0 amd64 1.83.0-2.1ubuntu3.2 [284 kB]
+Get:71 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libboost-program-options1.83.0 amd64 1.83.0-2.1ubuntu3.2 [321 kB]
+Get:72 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libboost-python1.83.0 amd64 1.83.0-2.1ubuntu3.2 [312 kB]
+Get:73 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libboost-serialization1.83.0 amd64 1.83.0-2.1ubuntu3.2 [341 kB]
+Get:74 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libboost-thread1.83.0 amd64 1.83.0-2.1ubuntu3.2 [276 kB]
+Get:75 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libcfitsio-dev amd64 4.3.1-1.1build2 [598 kB]
+Get:76 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libdav1d7 amd64 1.4.1-1build1 [604 kB]
+Get:77 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libdav1d-dev amd64 1.4.1-1build1 [25.3 kB]
+Get:78 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libdbi-perl amd64 1.643-4ubuntu0.4 [722 kB]
+Get:79 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libdbd-pg-perl amd64 3.18.0-1build3 [192 kB]
+Get:80 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libde265-0 amd64 1.0.15-1ubuntu0.2 [167 kB]
+Get:81 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libde265-dev amd64 1.0.15-1ubuntu0.2 [12.6 kB]
+Get:82 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libdeflate-dev amd64 1.19-1build1.1 [50.9 kB]
+Get:83 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libfyba-dev amd64 4.1.1-11build1 [178 kB]
+Get:84 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libgeos-dev amd64 3.12.1-3build1 [54.4 kB]
+Get:85 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgif-dev amd64 5.2.2-1ubuntu1.2 [22.9 kB]
+Get:86 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libsharpyuv-dev amd64 1.3.2-0.4build3 [16.0 kB]
+Get:87 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libx265-199 amd64 3.5-2build1 [1226 kB]
+Get:88 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libx265-dev amd64 3.5-2build1 [1351 kB]
+Get:89 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 libheif-dev amd64 1.17.6-1ubuntu4.9 [41.7 kB]
+Get:90 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libimagequant0 amd64 2.18.0-1build1 [36.3 kB]
+Get:91 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libkmlconvenience1t64 amd64 1.3.0-12build1 [49.8 kB]
+Get:92 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libkmlregionator1t64 amd64 1.3.0-12build1 [21.4 kB]
+Get:93 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libkmlxsd1t64 amd64 1.3.0-12build1 [29.7 kB]
+Get:94 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 liblerc-dev amd64 4.0.0+ds-4ubuntu2 [182 kB]
+Get:95 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libltdl-dev amd64 2.4.7-7build1 [168 kB]
+Get:96 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libmapnik3.1t64 amd64 3.1.0+ds-7ubuntu2 [2575 kB]
+Get:97 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 libminizip-dev amd64 1:1.3.dfsg-3.1ubuntu2.3 [30.1 kB]
+Get:98 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libnetcdf-dev amd64 1:4.9.2-5ubuntu4 [58.0 kB]
+Get:99 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libodbccr2 amd64 2.3.12-1ubuntu0.24.04.1 [16.1 kB]
+Get:100 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libtirpc-dev amd64 1.3.4+ds-1.1build1 [193 kB]
+Get:101 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libogdi-dev amd64 4.1.1+ds-3build1 [22.8 kB]
+Get:102 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpng-dev amd64 1.6.43-5ubuntu0.7 [265 kB]
+Get:103 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpoppler-dev amd64 24.02.0-1ubuntu9.11 [5202 B]
+Get:104 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpoppler-private-dev amd64 24.02.0-1ubuntu9.11 [197 kB]
+Get:105 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libqhull8.0 amd64 2020.2-6build1 [192 kB]
+Get:106 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libqhullcpp8.0 amd64 2020.2-6build1 [51.7 kB]
+Get:107 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libqhull-dev amd64 2020.2-6build1 [496 kB]
+Get:108 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libraqm0 amd64 0.10.1-1build1 [15.0 kB]
+Get:109 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 librsvg2-2 amd64 2.58.0+dfsg-1ubuntu0.1 [2141 kB]
+Get:110 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 librsvg2-bin amd64 2.58.0+dfsg-1ubuntu0.1 [2301 kB]
+Get:111 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 librttopo-dev amd64 1.1.0-3build2 [238 kB]
+Get:112 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libsfcgal1t64 amd64 1.5.1-3build1 [2583 kB]
+Get:113 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libjbig-dev amd64 2.1-6.1ubuntu2 [27.9 kB]
+Get:114 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 liblzma-dev amd64 5.6.1+really5.4.5-1ubuntu0.4 [176 kB]
+Get:115 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libwebpdecoder3 amd64 1.3.2-0.4build3 [114 kB]
+Get:116 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libwebp-dev amd64 1.3.2-0.4build3 [367 kB]
+Get:117 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libtiffxx6 amd64 4.5.1+git230720-4ubuntu2.5 [5642 B]
+Get:118 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libtiff-dev amd64 4.5.1+git230720-4ubuntu2.5 [338 kB]
+Get:119 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 liburiparser-dev amd64 0.9.7+dfsg-2build1 [15.0 kB]
+Get:120 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libxerces-c-dev amd64 3.2.4+debian-1.2ubuntu2 [1815 kB]
+Get:121 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 mapnik-utils amd64 3.1.0+ds-7ubuntu2 [232 kB]
+Get:122 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 python3-psycopg2 amd64 2.9.9-1build1 [131 kB]
+Get:123 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 python3-pyosmium amd64 3.7.0-1build1 [773 kB]
+Get:124 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 osm2pgsql amd64 1.11.0+ds-1 [672 kB]
+Get:125 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 osmium-tool amd64 1.16.0-1build1 [582 kB]
+Get:126 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 postgresql-16-postgis-3-scripts all 3.4.2+dfsg-1ubuntu3 [998 kB]
+Get:127 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 postgresql-16-postgis-3 amd64 3.4.2+dfsg-1ubuntu3 [3883 kB]
+Get:128 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 postgresql-contrib all 16+257build1.1 [11.6 kB]
+Get:129 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 python3-cairo amd64 1.25.1-2build2 [119 kB]
+Get:130 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 python3-mapnik amd64 1:0.0~20200224-7da019cf9-5build3 [2230 kB]
+Get:131 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 python3-pil amd64 10.2.0-1ubuntu1.4 [453 kB]
+Get:132 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libfreexl-dev amd64 2.0.0-1build2 [43.8 kB]
+Get:133 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libproj-dev amd64 9.4.0-1build2 [75.9 kB]
+Get:134 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libgeotiff-dev amd64 1.7.1-5build1 [88.7 kB]
+Get:135 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libhdf4-alt-dev amd64 4.2.16-4build1 [387 kB]
+Get:136 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 libjson-c-dev amd64 0.17-1build1 [63.6 kB]
+Get:137 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libkml-dev amd64 1.3.0-12build1 [659 kB]
+Get:138 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 libopenjp2-7-dev amd64 2.5.0-2ubuntu0.5 [258 kB]
+Get:139 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libspatialite-dev amd64 5.1.0-3build1 [2331 kB]
+Get:140 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 unixodbc-dev amd64 2.3.12-1ubuntu0.24.04.1 [250 kB]
+Get:141 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 libgdal-dev amd64 3.8.4+dfsg-3ubuntu3 [211 kB]
+Fetched 113 MB in 6s (19.6 MB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 215987 files and directories currently installed.)
+Preparing to unpack .../000-libsqlite3-dev_3.45.1-1ubuntu2.9_amd64.deb ...
+Unpacking libsqlite3-dev:amd64 (3.45.1-1ubuntu2.9) over (3.45.1-1ubuntu2.8) ...
+Preparing to unpack .../001-sqlite3_3.45.1-1ubuntu2.9_amd64.deb ...
+Unpacking sqlite3 (3.45.1-1ubuntu2.9) over (3.45.1-1ubuntu2.8) ...
+Preparing to unpack .../002-libsqlite3-0_3.45.1-1ubuntu2.9_amd64.deb ...
+Unpacking libsqlite3-0:amd64 (3.45.1-1ubuntu2.9) over (3.45.1-1ubuntu2.8) ...
+Selecting previously unselected package build-essential.
+Preparing to unpack .../003-build-essential_12.10ubuntu1_amd64.deb ...
+Unpacking build-essential (12.10ubuntu1) ...
+Selecting previously unselected package default-libmysqlclient-dev:amd64.
+Preparing to unpack .../004-default-libmysqlclient-dev_1.1.0build1_amd64.deb ...
+Unpacking default-libmysqlclient-dev:amd64 (1.1.0build1) ...
+Selecting previously unselected package fonts-noto-mono.
+Preparing to unpack .../005-fonts-noto-mono_20201225-2_all.deb ...
+Unpacking fonts-noto-mono (20201225-2) ...
+Selecting previously unselected package fonts-noto-core.
+Preparing to unpack .../006-fonts-noto-core_20201225-2_all.deb ...
+Unpacking fonts-noto-core (20201225-2) ...
+Selecting previously unselected package fonts-unifont.
+Preparing to unpack .../007-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+Unpacking fonts-unifont (1:15.1.01-1build1) ...
+Selecting previously unselected package libblas3:amd64.
+Preparing to unpack .../008-libblas3_3.12.0-3build1.1_amd64.deb ...
+Unpacking libblas3:amd64 (3.12.0-3build1.1) ...
+Selecting previously unselected package liblapack3:amd64.
+Preparing to unpack .../009-liblapack3_3.12.0-3build1.1_amd64.deb ...
+Unpacking liblapack3:amd64 (3.12.0-3build1.1) ...
+Selecting previously unselected package python3-numpy.
+Preparing to unpack .../010-python3-numpy_1%3a1.26.4+ds-6ubuntu1_amd64.deb ...
+Unpacking python3-numpy (1:1.26.4+ds-6ubuntu1) ...
+Selecting previously unselected package gdal-data.
+Preparing to unpack .../011-gdal-data_3.8.4+dfsg-3ubuntu3_all.deb ...
+Unpacking gdal-data (3.8.4+dfsg-3ubuntu3) ...
+Selecting previously unselected package gdal-plugins:amd64.
+Preparing to unpack .../012-gdal-plugins_3.8.4+dfsg-3ubuntu3_amd64.deb ...
+Unpacking gdal-plugins:amd64 (3.8.4+dfsg-3ubuntu3) ...
+Selecting previously unselected package libaec0:amd64.
+Preparing to unpack .../013-libaec0_1.1.2-1build1_amd64.deb ...
+Unpacking libaec0:amd64 (1.1.2-1build1) ...
+Selecting previously unselected package libarpack2t64:amd64.
+Preparing to unpack .../014-libarpack2t64_3.9.1-1.1build2_amd64.deb ...
+Unpacking libarpack2t64:amd64 (3.9.1-1.1build2) ...
+Selecting previously unselected package libsuperlu6:amd64.
+Preparing to unpack .../015-libsuperlu6_6.0.1+dfsg1-1build1_amd64.deb ...
+Unpacking libsuperlu6:amd64 (6.0.1+dfsg1-1build1) ...
+Selecting previously unselected package libarmadillo12.
+Preparing to unpack .../016-libarmadillo12_1%3a12.6.7+dfsg-1build2_amd64.deb ...
+Unpacking libarmadillo12 (1:12.6.7+dfsg-1build2) ...
+Selecting previously unselected package libblosc1:amd64.
+Preparing to unpack .../017-libblosc1_1.21.5+ds-1build1_amd64.deb ...
+Unpacking libblosc1:amd64 (1.21.5+ds-1build1) ...
+Selecting previously unselected package libcfitsio10t64:amd64.
+Preparing to unpack .../018-libcfitsio10t64_4.3.1-1.1build2_amd64.deb ...
+Unpacking libcfitsio10t64:amd64 (4.3.1-1.1build2) ...
+Selecting previously unselected package libminizip1t64:amd64.
+Preparing to unpack .../019-libminizip1t64_1%3a1.3.dfsg-3.1ubuntu2.3_amd64.deb ...
+Unpacking libminizip1t64:amd64 (1:1.3.dfsg-3.1ubuntu2.3) ...
+Selecting previously unselected package libfreexl1:amd64.
+Preparing to unpack .../020-libfreexl1_2.0.0-1build2_amd64.deb ...
+Unpacking libfreexl1:amd64 (2.0.0-1build2) ...
+Selecting previously unselected package libfyba0t64:amd64.
+Preparing to unpack .../021-libfyba0t64_4.1.1-11build1_amd64.deb ...
+Unpacking libfyba0t64:amd64 (4.1.1-11build1) ...
+Selecting previously unselected package libgeos3.12.1t64:amd64.
+Preparing to unpack .../022-libgeos3.12.1t64_3.12.1-3build1_amd64.deb ...
+Unpacking libgeos3.12.1t64:amd64 (3.12.1-3build1) ...
+Selecting previously unselected package libgeos-c1t64:amd64.
+Preparing to unpack .../023-libgeos-c1t64_3.12.1-3build1_amd64.deb ...
+Unpacking libgeos-c1t64:amd64 (3.12.1-3build1) ...
+Selecting previously unselected package proj-data.
+Preparing to unpack .../024-proj-data_9.4.0-1build2_all.deb ...
+Unpacking proj-data (9.4.0-1build2) ...
+Selecting previously unselected package libproj25:amd64.
+Preparing to unpack .../025-libproj25_9.4.0-1build2_amd64.deb ...
+Unpacking libproj25:amd64 (9.4.0-1build2) ...
+Selecting previously unselected package libgeotiff5:amd64.
+Preparing to unpack .../026-libgeotiff5_1.7.1-5build1_amd64.deb ...
+Unpacking libgeotiff5:amd64 (1.7.1-5build1) ...
+Selecting previously unselected package libgif7:amd64.
+Preparing to unpack .../027-libgif7_5.2.2-1ubuntu1.2_amd64.deb ...
+Unpacking libgif7:amd64 (5.2.2-1ubuntu1.2) ...
+Selecting previously unselected package libhdf4-0-alt:amd64.
+Preparing to unpack .../028-libhdf4-0-alt_4.2.16-4build1_amd64.deb ...
+Unpacking libhdf4-0-alt:amd64 (4.2.16-4build1) ...
+Selecting previously unselected package libsz2:amd64.
+Preparing to unpack .../029-libsz2_1.1.2-1build1_amd64.deb ...
+Unpacking libsz2:amd64 (1.1.2-1build1) ...
+Selecting previously unselected package libhdf5-103-1t64:amd64.
+Preparing to unpack .../030-libhdf5-103-1t64_1.10.10+repack-3.1ubuntu4_amd64.deb ...
+Unpacking libhdf5-103-1t64:amd64 (1.10.10+repack-3.1ubuntu4) ...
+Selecting previously unselected package liburiparser1:amd64.
+Preparing to unpack .../031-liburiparser1_0.9.7+dfsg-2build1_amd64.deb ...
+Unpacking liburiparser1:amd64 (0.9.7+dfsg-2build1) ...
+Selecting previously unselected package libkmlbase1t64:amd64.
+Preparing to unpack .../032-libkmlbase1t64_1.3.0-12build1_amd64.deb ...
+Unpacking libkmlbase1t64:amd64 (1.3.0-12build1) ...
+Selecting previously unselected package libkmldom1t64:amd64.
+Preparing to unpack .../033-libkmldom1t64_1.3.0-12build1_amd64.deb ...
+Unpacking libkmldom1t64:amd64 (1.3.0-12build1) ...
+Selecting previously unselected package libkmlengine1t64:amd64.
+Preparing to unpack .../034-libkmlengine1t64_1.3.0-12build1_amd64.deb ...
+Unpacking libkmlengine1t64:amd64 (1.3.0-12build1) ...
+Selecting previously unselected package libhdf5-hl-100t64:amd64.
+Preparing to unpack .../035-libhdf5-hl-100t64_1.10.10+repack-3.1ubuntu4_amd64.deb ...
+Unpacking libhdf5-hl-100t64:amd64 (1.10.10+repack-3.1ubuntu4) ...
+Selecting previously unselected package libnetcdf19t64:amd64.
+Preparing to unpack .../036-libnetcdf19t64_1%3a4.9.2-5ubuntu4_amd64.deb ...
+Unpacking libnetcdf19t64:amd64 (1:4.9.2-5ubuntu4) ...
+Selecting previously unselected package unixodbc-common.
+Preparing to unpack .../037-unixodbc-common_2.3.12-1ubuntu0.24.04.1_all.deb ...
+Unpacking unixodbc-common (2.3.12-1ubuntu0.24.04.1) ...
+Selecting previously unselected package libodbcinst2:amd64.
+Preparing to unpack .../038-libodbcinst2_2.3.12-1ubuntu0.24.04.1_amd64.deb ...
+Unpacking libodbcinst2:amd64 (2.3.12-1ubuntu0.24.04.1) ...
+Selecting previously unselected package libogdi4.1:amd64.
+Preparing to unpack .../039-libogdi4.1_4.1.1+ds-3build1_amd64.deb ...
+Unpacking libogdi4.1:amd64 (4.1.1+ds-3build1) ...
+Selecting previously unselected package libpoppler134:amd64.
+Preparing to unpack .../040-libpoppler134_24.02.0-1ubuntu9.11_amd64.deb ...
+Unpacking libpoppler134:amd64 (24.02.0-1ubuntu9.11) ...
+Selecting previously unselected package libqhull-r8.0:amd64.
+Preparing to unpack .../041-libqhull-r8.0_2020.2-6build1_amd64.deb ...
+Unpacking libqhull-r8.0:amd64 (2020.2-6build1) ...
+Selecting previously unselected package librttopo1:amd64.
+Preparing to unpack .../042-librttopo1_1.1.0-3build2_amd64.deb ...
+Unpacking librttopo1:amd64 (1.1.0-3build2) ...
+Selecting previously unselected package libspatialite8t64:amd64.
+Preparing to unpack .../043-libspatialite8t64_5.1.0-3build1_amd64.deb ...
+Unpacking libspatialite8t64:amd64 (5.1.0-3build1) ...
+Selecting previously unselected package libxerces-c3.2t64:amd64.
+Preparing to unpack .../044-libxerces-c3.2t64_3.2.4+debian-1.2ubuntu2_amd64.deb ...
+Unpacking libxerces-c3.2t64:amd64 (3.2.4+debian-1.2ubuntu2) ...
+Selecting previously unselected package libgdal34t64:amd64.
+Preparing to unpack .../045-libgdal34t64_3.8.4+dfsg-3ubuntu3_amd64.deb ...
+Unpacking libgdal34t64:amd64 (3.8.4+dfsg-3ubuntu3) ...
+Selecting previously unselected package python3-gdal.
+Preparing to unpack .../046-python3-gdal_3.8.4+dfsg-3ubuntu3_amd64.deb ...
+Unpacking python3-gdal (3.8.4+dfsg-3ubuntu3) ...
+Selecting previously unselected package gdal-bin.
+Preparing to unpack .../047-gdal-bin_3.8.4+dfsg-3ubuntu3_amd64.deb ...
+Unpacking gdal-bin (3.8.4+dfsg-3ubuntu3) ...
+Selecting previously unselected package hdf5-helpers.
+Preparing to unpack .../048-hdf5-helpers_1.10.10+repack-3.1ubuntu4_amd64.deb ...
+Unpacking hdf5-helpers (1.10.10+repack-3.1ubuntu4) ...
+Selecting previously unselected package libaom-dev:amd64.
+Preparing to unpack .../049-libaom-dev_3.8.2-2ubuntu0.2_amd64.deb ...
+Unpacking libaom-dev:amd64 (3.8.2-2ubuntu0.2) ...
+Selecting previously unselected package libblas-dev:amd64.
+Preparing to unpack .../050-libblas-dev_3.12.0-3build1.1_amd64.deb ...
+Unpacking libblas-dev:amd64 (3.12.0-3build1.1) ...
+Selecting previously unselected package liblapack-dev:amd64.
+Preparing to unpack .../051-liblapack-dev_3.12.0-3build1.1_amd64.deb ...
+Unpacking liblapack-dev:amd64 (3.12.0-3build1.1) ...
+Selecting previously unselected package libarpack2-dev:amd64.
+Preparing to unpack .../052-libarpack2-dev_3.9.1-1.1build2_amd64.deb ...
+Unpacking libarpack2-dev:amd64 (3.9.1-1.1build2) ...
+Selecting previously unselected package libhdf5-fortran-102t64:amd64.
+Preparing to unpack .../053-libhdf5-fortran-102t64_1.10.10+repack-3.1ubuntu4_amd64.deb ...
+Unpacking libhdf5-fortran-102t64:amd64 (1.10.10+repack-3.1ubuntu4) ...
+Selecting previously unselected package libhdf5-hl-fortran-100t64:amd64.
+Preparing to unpack .../054-libhdf5-hl-fortran-100t64_1.10.10+repack-3.1ubuntu4_amd64.deb ...
+Unpacking libhdf5-hl-fortran-100t64:amd64 (1.10.10+repack-3.1ubuntu4) ...
+Selecting previously unselected package libhdf5-cpp-103-1t64:amd64.
+Preparing to unpack .../055-libhdf5-cpp-103-1t64_1.10.10+repack-3.1ubuntu4_amd64.deb ...
+Unpacking libhdf5-cpp-103-1t64:amd64 (1.10.10+repack-3.1ubuntu4) ...
+Selecting previously unselected package libhdf5-hl-cpp-100t64:amd64.
+Preparing to unpack .../056-libhdf5-hl-cpp-100t64_1.10.10+repack-3.1ubuntu4_amd64.deb ...
+Unpacking libhdf5-hl-cpp-100t64:amd64 (1.10.10+repack-3.1ubuntu4) ...
+Selecting previously unselected package libjpeg-turbo8-dev:amd64.
+Preparing to unpack .../057-libjpeg-turbo8-dev_2.1.5-2ubuntu2_amd64.deb ...
+Unpacking libjpeg-turbo8-dev:amd64 (2.1.5-2ubuntu2) ...
+Selecting previously unselected package libjpeg8-dev:amd64.
+Preparing to unpack .../058-libjpeg8-dev_8c-2ubuntu11_amd64.deb ...
+Unpacking libjpeg8-dev:amd64 (8c-2ubuntu11) ...
+Selecting previously unselected package libjpeg-dev:amd64.
+Preparing to unpack .../059-libjpeg-dev_8c-2ubuntu11_amd64.deb ...
+Unpacking libjpeg-dev:amd64 (8c-2ubuntu11) ...
+Selecting previously unselected package libaec-dev:amd64.
+Preparing to unpack .../060-libaec-dev_1.1.2-1build1_amd64.deb ...
+Unpacking libaec-dev:amd64 (1.1.2-1build1) ...
+Selecting previously unselected package libcurl4-openssl-dev:amd64.
+Preparing to unpack .../061-libcurl4-openssl-dev_8.5.0-2ubuntu10.16_amd64.deb ...
+Unpacking libcurl4-openssl-dev:amd64 (8.5.0-2ubuntu10.16) ...
+Selecting previously unselected package libhdf5-dev.
+Preparing to unpack .../062-libhdf5-dev_1.10.10+repack-3.1ubuntu4_amd64.deb ...
+Unpacking libhdf5-dev (1.10.10+repack-3.1ubuntu4) ...
+Selecting previously unselected package libsuperlu-dev:amd64.
+Preparing to unpack .../063-libsuperlu-dev_6.0.1+dfsg1-1build1_amd64.deb ...
+Unpacking libsuperlu-dev:amd64 (6.0.1+dfsg1-1build1) ...
+Selecting previously unselected package libarmadillo-dev.
+Preparing to unpack .../064-libarmadillo-dev_1%3a12.6.7+dfsg-1build2_amd64.deb ...
+Unpacking libarmadillo-dev (1:12.6.7+dfsg-1build2) ...
+Selecting previously unselected package libblosc-dev:amd64.
+Preparing to unpack .../065-libblosc-dev_1.21.5+ds-1build1_amd64.deb ...
+Unpacking libblosc-dev:amd64 (1.21.5+ds-1build1) ...
+Selecting previously unselected package libboost1.83-dev:amd64.
+Preparing to unpack .../066-libboost1.83-dev_1.83.0-2.1ubuntu3.2_amd64.deb ...
+Unpacking libboost1.83-dev:amd64 (1.83.0-2.1ubuntu3.2) ...
+Selecting previously unselected package libboost-dev:amd64.
+Preparing to unpack .../067-libboost-dev_1.83.0.1ubuntu2_amd64.deb ...
+Unpacking libboost-dev:amd64 (1.83.0.1ubuntu2) ...
+Selecting previously unselected package libboost-filesystem1.83.0:amd64.
+Preparing to unpack .../068-libboost-filesystem1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb ...
+Unpacking libboost-filesystem1.83.0:amd64 (1.83.0-2.1ubuntu3.2) ...
+Selecting previously unselected package libboost-program-options1.83.0:amd64.
+Preparing to unpack .../069-libboost-program-options1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb ...
+Unpacking libboost-program-options1.83.0:amd64 (1.83.0-2.1ubuntu3.2) ...
+Selecting previously unselected package libboost-python1.83.0.
+Preparing to unpack .../070-libboost-python1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb ...
+Unpacking libboost-python1.83.0 (1.83.0-2.1ubuntu3.2) ...
+Selecting previously unselected package libboost-serialization1.83.0:amd64.
+Preparing to unpack .../071-libboost-serialization1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb ...
+Unpacking libboost-serialization1.83.0:amd64 (1.83.0-2.1ubuntu3.2) ...
+Selecting previously unselected package libboost-thread1.83.0:amd64.
+Preparing to unpack .../072-libboost-thread1.83.0_1.83.0-2.1ubuntu3.2_amd64.deb ...
+Unpacking libboost-thread1.83.0:amd64 (1.83.0-2.1ubuntu3.2) ...
+Selecting previously unselected package libcfitsio-dev:amd64.
+Preparing to unpack .../073-libcfitsio-dev_4.3.1-1.1build2_amd64.deb ...
+Unpacking libcfitsio-dev:amd64 (4.3.1-1.1build2) ...
+Selecting previously unselected package libdav1d7:amd64.
+Preparing to unpack .../074-libdav1d7_1.4.1-1build1_amd64.deb ...
+Unpacking libdav1d7:amd64 (1.4.1-1build1) ...
+Selecting previously unselected package libdav1d-dev:amd64.
+Preparing to unpack .../075-libdav1d-dev_1.4.1-1build1_amd64.deb ...
+Unpacking libdav1d-dev:amd64 (1.4.1-1build1) ...
+Selecting previously unselected package libdbi-perl:amd64.
+Preparing to unpack .../076-libdbi-perl_1.643-4ubuntu0.4_amd64.deb ...
+Unpacking libdbi-perl:amd64 (1.643-4ubuntu0.4) ...
+Selecting previously unselected package libdbd-pg-perl.
+Preparing to unpack .../077-libdbd-pg-perl_3.18.0-1build3_amd64.deb ...
+Unpacking libdbd-pg-perl (3.18.0-1build3) ...
+Selecting previously unselected package libde265-0:amd64.
+Preparing to unpack .../078-libde265-0_1.0.15-1ubuntu0.2_amd64.deb ...
+Unpacking libde265-0:amd64 (1.0.15-1ubuntu0.2) ...
+Selecting previously unselected package libde265-dev:amd64.
+Preparing to unpack .../079-libde265-dev_1.0.15-1ubuntu0.2_amd64.deb ...
+Unpacking libde265-dev:amd64 (1.0.15-1ubuntu0.2) ...
+Selecting previously unselected package libdeflate-dev:amd64.
+Preparing to unpack .../080-libdeflate-dev_1.19-1build1.1_amd64.deb ...
+Unpacking libdeflate-dev:amd64 (1.19-1build1.1) ...
+Selecting previously unselected package libfyba-dev:amd64.
+Preparing to unpack .../081-libfyba-dev_4.1.1-11build1_amd64.deb ...
+Unpacking libfyba-dev:amd64 (4.1.1-11build1) ...
+Selecting previously unselected package libgeos-dev.
+Preparing to unpack .../082-libgeos-dev_3.12.1-3build1_amd64.deb ...
+Unpacking libgeos-dev (3.12.1-3build1) ...
+Selecting previously unselected package libgif-dev:amd64.
+Preparing to unpack .../083-libgif-dev_5.2.2-1ubuntu1.2_amd64.deb ...
+Unpacking libgif-dev:amd64 (5.2.2-1ubuntu1.2) ...
+Selecting previously unselected package libsharpyuv-dev:amd64.
+Preparing to unpack .../084-libsharpyuv-dev_1.3.2-0.4build3_amd64.deb ...
+Unpacking libsharpyuv-dev:amd64 (1.3.2-0.4build3) ...
+Selecting previously unselected package libx265-199:amd64.
+Preparing to unpack .../085-libx265-199_3.5-2build1_amd64.deb ...
+Unpacking libx265-199:amd64 (3.5-2build1) ...
+Selecting previously unselected package libx265-dev:amd64.
+Preparing to unpack .../086-libx265-dev_3.5-2build1_amd64.deb ...
+Unpacking libx265-dev:amd64 (3.5-2build1) ...
+Selecting previously unselected package libheif-dev:amd64.
+Preparing to unpack .../087-libheif-dev_1.17.6-1ubuntu4.9_amd64.deb ...
+Unpacking libheif-dev:amd64 (1.17.6-1ubuntu4.9) ...
+Selecting previously unselected package libimagequant0:amd64.
+Preparing to unpack .../088-libimagequant0_2.18.0-1build1_amd64.deb ...
+Unpacking libimagequant0:amd64 (2.18.0-1build1) ...
+Selecting previously unselected package libkmlconvenience1t64:amd64.
+Preparing to unpack .../089-libkmlconvenience1t64_1.3.0-12build1_amd64.deb ...
+Unpacking libkmlconvenience1t64:amd64 (1.3.0-12build1) ...
+Selecting previously unselected package libkmlregionator1t64:amd64.
+Preparing to unpack .../090-libkmlregionator1t64_1.3.0-12build1_amd64.deb ...
+Unpacking libkmlregionator1t64:amd64 (1.3.0-12build1) ...
+Selecting previously unselected package libkmlxsd1t64:amd64.
+Preparing to unpack .../091-libkmlxsd1t64_1.3.0-12build1_amd64.deb ...
+Unpacking libkmlxsd1t64:amd64 (1.3.0-12build1) ...
+Selecting previously unselected package liblerc-dev:amd64.
+Preparing to unpack .../092-liblerc-dev_4.0.0+ds-4ubuntu2_amd64.deb ...
+Unpacking liblerc-dev:amd64 (4.0.0+ds-4ubuntu2) ...
+Selecting previously unselected package libltdl-dev:amd64.
+Preparing to unpack .../093-libltdl-dev_2.4.7-7build1_amd64.deb ...
+Unpacking libltdl-dev:amd64 (2.4.7-7build1) ...
+Selecting previously unselected package libmapnik3.1t64.
+Preparing to unpack .../094-libmapnik3.1t64_3.1.0+ds-7ubuntu2_amd64.deb ...
+Unpacking libmapnik3.1t64 (3.1.0+ds-7ubuntu2) ...
+Selecting previously unselected package libminizip-dev:amd64.
+Preparing to unpack .../095-libminizip-dev_1%3a1.3.dfsg-3.1ubuntu2.3_amd64.deb ...
+Unpacking libminizip-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.3) ...
+Selecting previously unselected package libnetcdf-dev.
+Preparing to unpack .../096-libnetcdf-dev_1%3a4.9.2-5ubuntu4_amd64.deb ...
+Unpacking libnetcdf-dev (1:4.9.2-5ubuntu4) ...
+Selecting previously unselected package libodbccr2:amd64.
+Preparing to unpack .../097-libodbccr2_2.3.12-1ubuntu0.24.04.1_amd64.deb ...
+Unpacking libodbccr2:amd64 (2.3.12-1ubuntu0.24.04.1) ...
+Selecting previously unselected package libtirpc-dev:amd64.
+Preparing to unpack .../098-libtirpc-dev_1.3.4+ds-1.1build1_amd64.deb ...
+Unpacking libtirpc-dev:amd64 (1.3.4+ds-1.1build1) ...
+Selecting previously unselected package libogdi-dev.
+Preparing to unpack .../099-libogdi-dev_4.1.1+ds-3build1_amd64.deb ...
+Unpacking libogdi-dev (4.1.1+ds-3build1) ...
+Selecting previously unselected package libpng-dev:amd64.
+Preparing to unpack .../100-libpng-dev_1.6.43-5ubuntu0.7_amd64.deb ...
+Unpacking libpng-dev:amd64 (1.6.43-5ubuntu0.7) ...
+Selecting previously unselected package libpoppler-dev:amd64.
+Preparing to unpack .../101-libpoppler-dev_24.02.0-1ubuntu9.11_amd64.deb ...
+Unpacking libpoppler-dev:amd64 (24.02.0-1ubuntu9.11) ...
+Selecting previously unselected package libpoppler-private-dev:amd64.
+Preparing to unpack .../102-libpoppler-private-dev_24.02.0-1ubuntu9.11_amd64.deb ...
+Unpacking libpoppler-private-dev:amd64 (24.02.0-1ubuntu9.11) ...
+Selecting previously unselected package libqhull8.0:amd64.
+Preparing to unpack .../103-libqhull8.0_2020.2-6build1_amd64.deb ...
+Unpacking libqhull8.0:amd64 (2020.2-6build1) ...
+Selecting previously unselected package libqhullcpp8.0:amd64.
+Preparing to unpack .../104-libqhullcpp8.0_2020.2-6build1_amd64.deb ...
+Unpacking libqhullcpp8.0:amd64 (2020.2-6build1) ...
+Selecting previously unselected package libqhull-dev:amd64.
+Preparing to unpack .../105-libqhull-dev_2020.2-6build1_amd64.deb ...
+Unpacking libqhull-dev:amd64 (2020.2-6build1) ...
+Selecting previously unselected package libraqm0:amd64.
+Preparing to unpack .../106-libraqm0_0.10.1-1build1_amd64.deb ...
+Unpacking libraqm0:amd64 (0.10.1-1build1) ...
+Selecting previously unselected package librsvg2-2:amd64.
+Preparing to unpack .../107-librsvg2-2_2.58.0+dfsg-1ubuntu0.1_amd64.deb ...
+Unpacking librsvg2-2:amd64 (2.58.0+dfsg-1ubuntu0.1) ...
+Selecting previously unselected package librsvg2-bin.
+Preparing to unpack .../108-librsvg2-bin_2.58.0+dfsg-1ubuntu0.1_amd64.deb ...
+Unpacking librsvg2-bin (2.58.0+dfsg-1ubuntu0.1) ...
+Selecting previously unselected package librttopo-dev:amd64.
+Preparing to unpack .../109-librttopo-dev_1.1.0-3build2_amd64.deb ...
+Unpacking librttopo-dev:amd64 (1.1.0-3build2) ...
+Selecting previously unselected package libsfcgal1t64.
+Preparing to unpack .../110-libsfcgal1t64_1.5.1-3build1_amd64.deb ...
+Unpacking libsfcgal1t64 (1.5.1-3build1) ...
+Selecting previously unselected package libjbig-dev:amd64.
+Preparing to unpack .../111-libjbig-dev_2.1-6.1ubuntu2_amd64.deb ...
+Unpacking libjbig-dev:amd64 (2.1-6.1ubuntu2) ...
+Selecting previously unselected package liblzma-dev:amd64.
+Preparing to unpack .../112-liblzma-dev_5.6.1+really5.4.5-1ubuntu0.4_amd64.deb ...
+Unpacking liblzma-dev:amd64 (5.6.1+really5.4.5-1ubuntu0.4) ...
+Selecting previously unselected package libwebpdecoder3:amd64.
+Preparing to unpack .../113-libwebpdecoder3_1.3.2-0.4build3_amd64.deb ...
+Unpacking libwebpdecoder3:amd64 (1.3.2-0.4build3) ...
+Selecting previously unselected package libwebp-dev:amd64.
+Preparing to unpack .../114-libwebp-dev_1.3.2-0.4build3_amd64.deb ...
+Unpacking libwebp-dev:amd64 (1.3.2-0.4build3) ...
+Selecting previously unselected package libtiffxx6:amd64.
+Preparing to unpack .../115-libtiffxx6_4.5.1+git230720-4ubuntu2.5_amd64.deb ...
+Unpacking libtiffxx6:amd64 (4.5.1+git230720-4ubuntu2.5) ...
+Selecting previously unselected package libtiff-dev:amd64.
+Preparing to unpack .../116-libtiff-dev_4.5.1+git230720-4ubuntu2.5_amd64.deb ...
+Unpacking libtiff-dev:amd64 (4.5.1+git230720-4ubuntu2.5) ...
+Selecting previously unselected package liburiparser-dev.
+Preparing to unpack .../117-liburiparser-dev_0.9.7+dfsg-2build1_amd64.deb ...
+Unpacking liburiparser-dev (0.9.7+dfsg-2build1) ...
+Selecting previously unselected package libxerces-c-dev:amd64.
+Preparing to unpack .../118-libxerces-c-dev_3.2.4+debian-1.2ubuntu2_amd64.deb ...
+Unpacking libxerces-c-dev:amd64 (3.2.4+debian-1.2ubuntu2) ...
+Selecting previously unselected package mapnik-utils.
+Preparing to unpack .../119-mapnik-utils_3.1.0+ds-7ubuntu2_amd64.deb ...
+Unpacking mapnik-utils (3.1.0+ds-7ubuntu2) ...
+Selecting previously unselected package python3-psycopg2.
+Preparing to unpack .../120-python3-psycopg2_2.9.9-1build1_amd64.deb ...
+Unpacking python3-psycopg2 (2.9.9-1build1) ...
+Selecting previously unselected package python3-pyosmium.
+Preparing to unpack .../121-python3-pyosmium_3.7.0-1build1_amd64.deb ...
+Unpacking python3-pyosmium (3.7.0-1build1) ...
+Selecting previously unselected package osm2pgsql.
+Preparing to unpack .../122-osm2pgsql_1.11.0+ds-1_amd64.deb ...
+Unpacking osm2pgsql (1.11.0+ds-1) ...
+Selecting previously unselected package osmium-tool.
+Preparing to unpack .../123-osmium-tool_1.16.0-1build1_amd64.deb ...
+Unpacking osmium-tool (1.16.0-1build1) ...
+Selecting previously unselected package postgresql-16-postgis-3-scripts.
+Preparing to unpack .../124-postgresql-16-postgis-3-scripts_3.4.2+dfsg-1ubuntu3_all.deb ...
+Unpacking postgresql-16-postgis-3-scripts (3.4.2+dfsg-1ubuntu3) ...
+Selecting previously unselected package postgresql-16-postgis-3.
+Preparing to unpack .../125-postgresql-16-postgis-3_3.4.2+dfsg-1ubuntu3_amd64.deb ...
+Unpacking postgresql-16-postgis-3 (3.4.2+dfsg-1ubuntu3) ...
+Selecting previously unselected package postgresql-contrib.
+Preparing to unpack .../126-postgresql-contrib_16+257build1.1_all.deb ...
+Unpacking postgresql-contrib (16+257build1.1) ...
+Selecting previously unselected package python3-cairo.
+Preparing to unpack .../127-python3-cairo_1.25.1-2build2_amd64.deb ...
+Unpacking python3-cairo (1.25.1-2build2) ...
+Selecting previously unselected package python3-mapnik.
+Preparing to unpack .../128-python3-mapnik_1%3a0.0~20200224-7da019cf9-5build3_amd64.deb ...
+Unpacking python3-mapnik (1:0.0~20200224-7da019cf9-5build3) ...
+Selecting previously unselected package python3-pil:amd64.
+Preparing to unpack .../129-python3-pil_10.2.0-1ubuntu1.4_amd64.deb ...
+Unpacking python3-pil:amd64 (10.2.0-1ubuntu1.4) ...
+Selecting previously unselected package libfreexl-dev:amd64.
+Preparing to unpack .../130-libfreexl-dev_2.0.0-1build2_amd64.deb ...
+Unpacking libfreexl-dev:amd64 (2.0.0-1build2) ...
+Selecting previously unselected package libproj-dev:amd64.
+Preparing to unpack .../131-libproj-dev_9.4.0-1build2_amd64.deb ...
+Unpacking libproj-dev:amd64 (9.4.0-1build2) ...
+Selecting previously unselected package libgeotiff-dev:amd64.
+Preparing to unpack .../132-libgeotiff-dev_1.7.1-5build1_amd64.deb ...
+Unpacking libgeotiff-dev:amd64 (1.7.1-5build1) ...
+Selecting previously unselected package libhdf4-alt-dev.
+Preparing to unpack .../133-libhdf4-alt-dev_4.2.16-4build1_amd64.deb ...
+Unpacking libhdf4-alt-dev (4.2.16-4build1) ...
+Selecting previously unselected package libjson-c-dev:amd64.
+Preparing to unpack .../134-libjson-c-dev_0.17-1build1_amd64.deb ...
+Unpacking libjson-c-dev:amd64 (0.17-1build1) ...
+Selecting previously unselected package libkml-dev:amd64.
+Preparing to unpack .../135-libkml-dev_1.3.0-12build1_amd64.deb ...
+Unpacking libkml-dev:amd64 (1.3.0-12build1) ...
+Selecting previously unselected package libopenjp2-7-dev:amd64.
+Preparing to unpack .../136-libopenjp2-7-dev_2.5.0-2ubuntu0.5_amd64.deb ...
+Unpacking libopenjp2-7-dev:amd64 (2.5.0-2ubuntu0.5) ...
+Selecting previously unselected package libspatialite-dev:amd64.
+Preparing to unpack .../137-libspatialite-dev_5.1.0-3build1_amd64.deb ...
+Unpacking libspatialite-dev:amd64 (5.1.0-3build1) ...
+Selecting previously unselected package unixodbc-dev:amd64.
+Preparing to unpack .../138-unixodbc-dev_2.3.12-1ubuntu0.24.04.1_amd64.deb ...
+Unpacking unixodbc-dev:amd64 (2.3.12-1ubuntu0.24.04.1) ...
+Selecting previously unselected package libgdal-dev.
+Preparing to unpack .../139-libgdal-dev_3.8.4+dfsg-3ubuntu3_amd64.deb ...
+Unpacking libgdal-dev (3.8.4+dfsg-3ubuntu3) ...
+Setting up default-libmysqlclient-dev:amd64 (1.1.0build1) ...
+Setting up libboost-python1.83.0 (1.83.0-2.1ubuntu3.2) ...
+Setting up libboost-program-options1.83.0:amd64 (1.83.0-2.1ubuntu3.2) ...
+Setting up libjpeg-turbo8-dev:amd64 (2.1.5-2ubuntu2) ...
+Setting up libboost1.83-dev:amd64 (1.83.0-2.1ubuntu3.2) ...
+Setting up python3-cairo (1.25.1-2build2) ...
+Setting up proj-data (9.4.0-1build2) ...
+Setting up fonts-noto-mono (20201225-2) ...
+Setting up hdf5-helpers (1.10.10+repack-3.1ubuntu4) ...
+Setting up libogdi4.1:amd64 (4.1.1+ds-3build1) ...
+Setting up libpoppler134:amd64 (24.02.0-1ubuntu9.11) ...
+Setting up libqhull8.0:amd64 (2020.2-6build1) ...
+Setting up libgeos3.12.1t64:amd64 (3.12.1-3build1) ...
+Setting up libjson-c-dev:amd64 (0.17-1build1) ...
+Setting up libgeos-c1t64:amd64 (3.12.1-3build1) ...
+Setting up libsqlite3-0:amd64 (3.45.1-1ubuntu2.9) ...
+Setting up osmium-tool (1.16.0-1build1) ...
+Setting up libpng-dev:amd64 (1.6.43-5ubuntu0.7) ...
+Setting up libjbig-dev:amd64 (2.1-6.1ubuntu2) ...
+Setting up libwebpdecoder3:amd64 (1.3.2-0.4build3) ...
+Setting up libboost-thread1.83.0:amd64 (1.83.0-2.1ubuntu3.2) ...
+Setting up libqhull-r8.0:amd64 (2020.2-6build1) ...
+Setting up libboost-filesystem1.83.0:amd64 (1.83.0-2.1ubuntu3.2) ...
+Setting up libxerces-c3.2t64:amd64 (3.2.4+debian-1.2ubuntu2) ...
+Setting up libaec0:amd64 (1.1.2-1build1) ...
+Setting up gdal-data (3.8.4+dfsg-3ubuntu3) ...
+Setting up python3-pyosmium (3.7.0-1build1) ...
+Setting up libaom-dev:amd64 (3.8.2-2ubuntu0.2) ...
+Setting up librsvg2-2:amd64 (2.58.0+dfsg-1ubuntu0.1) ...
+Setting up libboost-serialization1.83.0:amd64 (1.83.0-2.1ubuntu3.2) ...
+Setting up libltdl-dev:amd64 (2.4.7-7build1) ...
+Setting up libblas3:amd64 (3.12.0-3build1.1) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/blas/libblas.so.3 to provide /usr/lib/x86_64-linux-gnu/libblas.so.3 (libblas.so.3-x86_64-linux-gnu) in auto mode
+Setting up libtirpc-dev:amd64 (1.3.4+ds-1.1build1) ...
+Setting up libcfitsio10t64:amd64 (4.3.1-1.1build2) ...
+Setting up libsqlite3-dev:amd64 (3.45.1-1ubuntu2.9) ...
+Setting up libopenjp2-7-dev:amd64 (2.5.0-2ubuntu0.5) ...
+Setting up libcurl4-openssl-dev:amd64 (8.5.0-2ubuntu10.16) ...
+Setting up libxerces-c-dev:amd64 (3.2.4+debian-1.2ubuntu2) ...
+Setting up libgeos-dev (3.12.1-3build1) ...
+Setting up libraqm0:amd64 (0.10.1-1build1) ...
+Setting up libimagequant0:amd64 (2.18.0-1build1) ...
+Setting up python3-psycopg2 (2.9.9-1build1) ...
+Setting up unixodbc-common (2.3.12-1ubuntu0.24.04.1) ...
+Setting up libqhullcpp8.0:amd64 (2020.2-6build1) ...
+Setting up liblerc-dev:amd64 (4.0.0+ds-4ubuntu2) ...
+Setting up libqhull-dev:amd64 (2020.2-6build1) ...
+Setting up libhdf4-0-alt:amd64 (4.2.16-4build1) ...
+Setting up libx265-199:amd64 (3.5-2build1) ...
+Setting up liblzma-dev:amd64 (5.6.1+really5.4.5-1ubuntu0.4) ...
+Setting up libgif7:amd64 (5.2.2-1ubuntu1.2) ...
+Setting up liburiparser1:amd64 (0.9.7+dfsg-2build1) ...
+Setting up libfyba0t64:amd64 (4.1.1-11build1) ...
+Setting up librttopo1:amd64 (1.1.0-3build2) ...
+Setting up libdav1d7:amd64 (1.4.1-1build1) ...
+Setting up libminizip1t64:amd64 (1:1.3.dfsg-3.1ubuntu2.3) ...
+Setting up libgif-dev:amd64 (5.2.2-1ubuntu1.2) ...
+Setting up libblosc1:amd64 (1.21.5+ds-1build1) ...
+Setting up postgresql-contrib (16+257build1.1) ...
+Setting up build-essential (12.10ubuntu1) ...
+Setting up libboost-dev:amd64 (1.83.0.1ubuntu2) ...
+Setting up libjpeg8-dev:amd64 (8c-2ubuntu11) ...
+Setting up libde265-0:amd64 (1.0.15-1ubuntu0.2) ...
+Setting up libsharpyuv-dev:amd64 (1.3.2-0.4build3) ...
+Setting up libkmlbase1t64:amd64 (1.3.0-12build1) ...
+Setting up libtiffxx6:amd64 (4.5.1+git230720-4ubuntu2.5) ...
+Setting up libdeflate-dev:amd64 (1.19-1build1.1) ...
+Setting up libogdi-dev (4.1.1+ds-3build1) ...
+Setting up fonts-noto-core (20201225-2) ...
+Setting up sqlite3 (3.45.1-1ubuntu2.9) ...
+Setting up libdbi-perl:amd64 (1.643-4ubuntu0.4) ...
+Setting up libsfcgal1t64 (1.5.1-3build1) ...
+Setting up libblas-dev:amd64 (3.12.0-3build1.1) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/blas/libblas.so to provide /usr/lib/x86_64-linux-gnu/libblas.so (libblas.so-x86_64-linux-gnu) in auto mode
+Setting up libsz2:amd64 (1.1.2-1build1) ...
+Setting up fonts-unifont (1:15.1.01-1build1) ...
+Setting up libodbccr2:amd64 (2.3.12-1ubuntu0.24.04.1) ...
+Setting up gdal-plugins:amd64 (3.8.4+dfsg-3ubuntu3) ...
+Setting up postgresql-16-postgis-3-scripts (3.4.2+dfsg-1ubuntu3) ...
+update-alternatives: using /usr/share/postgresql/16/extension/postgis-3.control to provide /usr/share/postgresql/16/extension/postgis.control (postgresql-16-postgis.control) in auto mode
+Setting up libpoppler-dev:amd64 (24.02.0-1ubuntu9.11) ...
+Setting up librsvg2-bin (2.58.0+dfsg-1ubuntu0.1) ...
+Setting up librttopo-dev:amd64 (1.1.0-3build2) ...
+Setting up libodbcinst2:amd64 (2.3.12-1ubuntu0.24.04.1) ...
+Setting up liblapack3:amd64 (3.12.0-3build1.1) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3 to provide /usr/lib/x86_64-linux-gnu/liblapack.so.3 (liblapack.so.3-x86_64-linux-gnu) in auto mode
+Setting up libkmlxsd1t64:amd64 (1.3.0-12build1) ...
+Setting up libarpack2t64:amd64 (3.9.1-1.1build2) ...
+Setting up libcfitsio-dev:amd64 (4.3.1-1.1build2) ...
+Setting up libproj25:amd64 (9.4.0-1build2) ...
+Setting up libblosc-dev:amd64 (1.21.5+ds-1build1) ...
+Setting up libfyba-dev:amd64 (4.1.1-11build1) ...
+Setting up libpoppler-private-dev:amd64 (24.02.0-1ubuntu9.11) ...
+Setting up libaec-dev:amd64 (1.1.2-1build1) ...
+Setting up libjpeg-dev:amd64 (8c-2ubuntu11) ...
+Setting up libdbd-pg-perl (3.18.0-1build3) ...
+Setting up libsuperlu6:amd64 (6.0.1+dfsg1-1build1) ...
+Setting up libgeotiff5:amd64 (1.7.1-5build1) ...
+Setting up liburiparser-dev (0.9.7+dfsg-2build1) ...
+Setting up libkmldom1t64:amd64 (1.3.0-12build1) ...
+Setting up libminizip-dev:amd64 (1:1.3.dfsg-3.1ubuntu2.3) ...
+Setting up python3-pil:amd64 (10.2.0-1ubuntu1.4) ...
+Setting up libwebp-dev:amd64 (1.3.2-0.4build3) ...
+Setting up libtiff-dev:amd64 (4.5.1+git230720-4ubuntu2.5) ...
+Setting up libde265-dev:amd64 (1.0.15-1ubuntu0.2) ...
+Setting up libdav1d-dev:amd64 (1.4.1-1build1) ...
+Setting up libx265-dev:amd64 (3.5-2build1) ...
+Setting up liblapack-dev:amd64 (3.12.0-3build1.1) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/lapack/liblapack.so to provide /usr/lib/x86_64-linux-gnu/liblapack.so (liblapack.so-x86_64-linux-gnu) in auto mode
+Setting up libproj-dev:amd64 (9.4.0-1build2) ...
+Setting up python3-numpy (1:1.26.4+ds-6ubuntu1) ...
+Setting up libfreexl1:amd64 (2.0.0-1build2) ...
+Setting up libhdf5-103-1t64:amd64 (1.10.10+repack-3.1ubuntu4) ...
+Setting up libsuperlu-dev:amd64 (6.0.1+dfsg1-1build1) ...
+Setting up unixodbc-dev:amd64 (2.3.12-1ubuntu0.24.04.1) ...
+Setting up libarmadillo12 (1:12.6.7+dfsg-1build2) ...
+Setting up libspatialite8t64:amd64 (5.1.0-3build1) ...
+Setting up libhdf5-hl-100t64:amd64 (1.10.10+repack-3.1ubuntu4) ...
+Setting up osm2pgsql (1.11.0+ds-1) ...
+Setting up libnetcdf19t64:amd64 (1:4.9.2-5ubuntu4) ...
+Setting up libarpack2-dev:amd64 (3.9.1-1.1build2) ...
+Setting up libgeotiff-dev:amd64 (1.7.1-5build1) ...
+Setting up libfreexl-dev:amd64 (2.0.0-1build2) ...
+Setting up libhdf5-cpp-103-1t64:amd64 (1.10.10+repack-3.1ubuntu4) ...
+Setting up libheif-dev:amd64 (1.17.6-1ubuntu4.9) ...
+Setting up libhdf5-fortran-102t64:amd64 (1.10.10+repack-3.1ubuntu4) ...
+Setting up libkmlengine1t64:amd64 (1.3.0-12build1) ...
+Setting up libgdal34t64:amd64 (3.8.4+dfsg-3ubuntu3) ...
+Setting up libmapnik3.1t64 (3.1.0+ds-7ubuntu2) ...
+Setting up libspatialite-dev:amd64 (5.1.0-3build1) ...
+Setting up libkmlconvenience1t64:amd64 (1.3.0-12build1) ...
+Setting up libhdf5-hl-cpp-100t64:amd64 (1.10.10+repack-3.1ubuntu4) ...
+Setting up python3-gdal (3.8.4+dfsg-3ubuntu3) ...
+Setting up libkmlregionator1t64:amd64 (1.3.0-12build1) ...
+Setting up mapnik-utils (3.1.0+ds-7ubuntu2) ...
+Setting up libhdf5-hl-fortran-100t64:amd64 (1.10.10+repack-3.1ubuntu4) ...
+Setting up postgresql-16-postgis-3 (3.4.2+dfsg-1ubuntu3) ...
+Setting up python3-mapnik (1:0.0~20200224-7da019cf9-5build3) ...
+Setting up gdal-bin (3.8.4+dfsg-3ubuntu3) ...
+Setting up libhdf5-dev (1.10.10+repack-3.1ubuntu4) ...
+update-alternatives: using /usr/lib/x86_64-linux-gnu/pkgconfig/hdf5-serial.pc to provide /usr/lib/x86_64-linux-gnu/pkgconfig/hdf5.pc (hdf5.pc) in auto mode
+Setting up libnetcdf-dev (1:4.9.2-5ubuntu4) ...
+Setting up libkml-dev:amd64 (1.3.0-12build1) ...
+Setting up libarmadillo-dev (1:12.6.7+dfsg-1build2) ...
+Setting up libhdf4-alt-dev (4.2.16-4build1) ...
+Setting up libgdal-dev (3.8.4+dfsg-3ubuntu3) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.9) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Not building database; man-db/auto-update is not 'true'.
+Processing triggers for postgresql-common (293.pgdg24.04+1) ...
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+  en_us
+Removing obsolete dictionary files:
+Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+ systemctl restart packagekit.service php8.3-fpm.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  fonts-roboto-unhinted
+0 upgraded, 1 newly installed, 0 to remove and 45 not upgraded.
+Need to get 2376 kB of archives.
+After this operation, 6388 kB of additional disk space will be used.
+Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-roboto-unhinted all 2:0~20170802-3 [2376 kB]
+Fetched 2376 kB in 0s (26.0 MB/s)
+Selecting previously unselected package fonts-roboto-unhinted.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 239357 files and directories currently installed.)
+Preparing to unpack .../fonts-roboto-unhinted_2%3a0~20170802-3_all.deb ...
+Unpacking fonts-roboto-unhinted (2:0~20170802-3) ...
+Setting up fonts-roboto-unhinted (2:0~20170802-3) ...
+Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  fonts-open-sans
+0 upgraded, 1 newly installed, 0 to remove and 45 not upgraded.
+Need to get 635 kB of archives.
+After this operation, 2890 kB of additional disk space will be used.
+Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-open-sans all 1.11-2 [635 kB]
+Fetched 635 kB in 0s (7226 kB/s)
+Selecting previously unselected package fonts-open-sans.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 239384 files and directories currently installed.)
+Preparing to unpack .../fonts-open-sans_1.11-2_all.deb ...
+Unpacking fonts-open-sans (1.11-2) ...
+Setting up fonts-open-sans (1.11-2) ...
+Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  cabextract xfonts-encodings xfonts-utils
+The following NEW packages will be installed:
+  cabextract ttf-mscorefonts-installer xfonts-encodings xfonts-utils
+0 upgraded, 4 newly installed, 0 to remove and 45 not upgraded.
+Need to get 723 kB of archives.
+After this operation, 1290 kB of additional disk space will be used.
+Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 cabextract amd64 1.11-2 [24.7 kB]
+Get:3 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
+Get:4 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
+Get:5 http://azure.archive.ubuntu.com/ubuntu noble/multiverse amd64 ttf-mscorefonts-installer all 3.8.1ubuntu1 [25.6 kB]
+Preconfiguring packages ...
+Fetched 723 kB in 0s (4252 kB/s)
+Selecting previously unselected package cabextract.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 239401 files and directories currently installed.)
+Preparing to unpack .../cabextract_1.11-2_amd64.deb ...
+Unpacking cabextract (1.11-2) ...
+Selecting previously unselected package xfonts-encodings.
+Preparing to unpack .../xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+Selecting previously unselected package xfonts-utils.
+Preparing to unpack .../xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+Unpacking xfonts-utils (1:7.7+6build3) ...
+Selecting previously unselected package ttf-mscorefonts-installer.
+Preparing to unpack .../ttf-mscorefonts-installer_3.8.1ubuntu1_all.deb ...
+mscorefonts-eula license has already been accepted
+Unpacking ttf-mscorefonts-installer (3.8.1ubuntu1) ...
+Setting up cabextract (1.11-2) ...
+Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+Setting up xfonts-utils (1:7.7+6build3) ...
+Setting up ttf-mscorefonts-installer (3.8.1ubuntu1) ...
+Processing triggers for update-notifier-common (3.192.68.2) ...
+ttf-mscorefonts-installer: processing...
+ttf-mscorefonts-installer: downloading http://downloads.sourceforge.net/corefonts/andale32.exe
+0% [Working]0% [Working]0% [Working]            Get:1 http://downloads.sourceforge.net/corefonts/andale32.exe [198 kB]
+6% [1 /var/lib/update-notifier/package-data-downloads/partial/andale32.exe 14.0                                                                               100% [Working]              Fetched 198 kB in 1s (380 kB/s)
+ttf-mscorefonts-installer: downloading http://downloads.sourceforge.net/corefonts/arial32.exe
+0% [Working]0% [Working]0% [Working]            Get:1 http://downloads.sourceforge.net/corefonts/arial32.exe [554 kB]
+2% [1 /var/lib/update-notifier/package-data-downloads/partial/arial32.exe 14.0                                                                                100% [Working]              Fetched 554 kB in 1s (1086 kB/s)
+ttf-mscorefonts-installer: downloading http://downloads.sourceforge.net/corefonts/arialb32.exe
+0% [Working]0% [Working]0% [Working]            Get:1 http://downloads.sourceforge.net/corefonts/arialb32.exe [168 kB]
+7% [1 /var/lib/update-notifier/package-data-downloads/partial/arialb32.exe 14.0                                                                               100% [Working]              Fetched 168 kB in 0s (354 kB/s)
+ttf-mscorefonts-installer: downloading http://downloads.sourceforge.net/corefonts/comic32.exe
+0% [Working]0% [Working]0% [Working]            Get:1 http://downloads.sourceforge.net/corefonts/comic32.exe [246 kB]
+5% [1 /var/lib/update-notifier/package-data-downloads/partial/comic32.exe 14.0                                                                                100% [Working]              Fetched 246 kB in 0s (693 kB/s)
+ttf-mscorefonts-installer: downloading http://downloads.sourceforge.net/corefonts/courie32.exe
+0% [Working]0% [Working]0% [Working]            Get:1 http://downloads.sourceforge.net/corefonts/courie32.exe [646 kB]
+2% [1 /var/lib/update-notifier/package-data-downloads/partial/courie32.exe 14.0                                                                               100% [Working]              Fetched 646 kB in 0s (1345 kB/s)
+ttf-mscorefonts-installer: downloading http://downloads.sourceforge.net/corefonts/georgi32.exe
+0% [Working]0% [Working]0% [Working]            Get:1 http://downloads.sourceforge.net/corefonts/georgi32.exe [392 kB]
+3% [1 /var/lib/update-notifier/package-data-downloads/partial/georgi32.exe 14.0                                                                               100% [Working]              Fetched 392 kB in 0s (790 kB/s)
+ttf-mscorefonts-installer: downloading http://downloads.sourceforge.net/corefonts/impact32.exe
+0% [Working]0% [Working]0% [Working]            Get:1 http://downloads.sourceforge.net/corefonts/impact32.exe [173 kB]
+6% [1 /var/lib/update-notifier/package-data-downloads/partial/impact32.exe 14.0                                                                               100% [Working]              Fetched 173 kB in 0s (431 kB/s)
+ttf-mscorefonts-installer: downloading http://downloads.sourceforge.net/corefonts/times32.exe
+0% [Working]0% [Working]0% [Working]            Get:1 http://downloads.sourceforge.net/corefonts/times32.exe [662 kB]
+2% [1 /var/lib/update-notifier/package-data-downloads/partial/times32.exe 14.0                                                                                100% [Working]              Fetched 662 kB in 0s (1528 kB/s)
+ttf-mscorefonts-installer: downloading http://downloads.sourceforge.net/corefonts/trebuc32.exe
+0% [Working]0% [Working]0% [Working]            Get:1 http://downloads.sourceforge.net/corefonts/trebuc32.exe [357 kB]
+3% [1 /var/lib/update-notifier/package-data-downloads/partial/trebuc32.exe 14.0                                                                               100% [Working]              Fetched 357 kB in 0s (730 kB/s)
+ttf-mscorefonts-installer: downloading http://downloads.sourceforge.net/corefonts/verdan32.exe
+0% [Working]0% [Working]0% [Working]            Get:1 http://downloads.sourceforge.net/corefonts/verdan32.exe [352 kB]
+3% [1 /var/lib/update-notifier/package-data-downloads/partial/verdan32.exe 14.0                                                                               100% [Working]              Fetched 352 kB in 0s (729 kB/s)
+ttf-mscorefonts-installer: downloading http://downloads.sourceforge.net/corefonts/webdin32.exe
+0% [Working]0% [Working]0% [Working]            Get:1 http://downloads.sourceforge.net/corefonts/webdin32.exe [185 kB]
+6% [1 /var/lib/update-notifier/package-data-downloads/partial/webdin32.exe 14.0                                                                               100% [Working]              Fetched 185 kB in 0s (461 kB/s)
+
+These fonts were provided by Microsoft "in the interest of cross-
+platform compatibility".  This is no longer the case, but they are
+still available from third parties.
+
+You are free to download these fonts and use them for your own use,
+but you may not redistribute them in modified form, including changes
+to the file name or packaging format.
+
+Extracting cabinet: /var/lib/update-notifier/package-data-downloads/partial/andale32.exe
+  extracting fontinst.inf
+  extracting andale.inf
+  extracting fontinst.exe
+  extracting AndaleMo.TTF
+  extracting ADVPACK.DLL
+  extracting W95INF32.DLL
+  extracting W95INF16.DLL
+
+All done, no errors.
+Extracting cabinet: /var/lib/update-notifier/package-data-downloads/partial/arial32.exe
+  extracting FONTINST.EXE
+  extracting fontinst.inf
+  extracting Ariali.TTF
+  extracting Arialbd.TTF
+  extracting Arialbi.TTF
+  extracting Arial.TTF
+
+All done, no errors.
+Extracting cabinet: /var/lib/update-notifier/package-data-downloads/partial/arialb32.exe
+  extracting fontinst.exe
+  extracting fontinst.inf
+  extracting AriBlk.TTF
+
+All done, no errors.
+Extracting cabinet: /var/lib/update-notifier/package-data-downloads/partial/comic32.exe
+  extracting fontinst.inf
+  extracting Comicbd.TTF
+  extracting Comic.TTF
+  extracting fontinst.exe
+
+All done, no errors.
+Extracting cabinet: /var/lib/update-notifier/package-data-downloads/partial/courie32.exe
+  extracting cour.ttf
+  extracting courbd.ttf
+  extracting courbi.ttf
+  extracting fontinst.inf
+  extracting couri.ttf
+  extracting fontinst.exe
+
+All done, no errors.
+Extracting cabinet: /var/lib/update-notifier/package-data-downloads/partial/georgi32.exe
+  extracting fontinst.inf
+  extracting Georgiaz.TTF
+  extracting Georgiab.TTF
+  extracting Georgiai.TTF
+  extracting Georgia.TTF
+  extracting fontinst.exe
+
+All done, no errors.
+Extracting cabinet: /var/lib/update-notifier/package-data-downloads/partial/impact32.exe
+  extracting fontinst.exe
+  extracting Impact.TTF
+  extracting fontinst.inf
+
+All done, no errors.
+Extracting cabinet: /var/lib/update-notifier/package-data-downloads/partial/times32.exe
+  extracting fontinst.inf
+  extracting Times.TTF
+  extracting Timesbd.TTF
+  extracting Timesbi.TTF
+  extracting Timesi.TTF
+  extracting FONTINST.EXE
+
+All done, no errors.
+Extracting cabinet: /var/lib/update-notifier/package-data-downloads/partial/trebuc32.exe
+  extracting FONTINST.EXE
+  extracting trebuc.ttf
+  extracting Trebucbd.ttf
+  extracting trebucbi.ttf
+  extracting trebucit.ttf
+  extracting fontinst.inf
+
+All done, no errors.
+Extracting cabinet: /var/lib/update-notifier/package-data-downloads/partial/verdan32.exe
+  extracting fontinst.exe
+  extracting fontinst.inf
+  extracting Verdanab.TTF
+  extracting Verdanai.TTF
+  extracting Verdanaz.TTF
+  extracting Verdana.TTF
+
+All done, no errors.
+Extracting cabinet: /var/lib/update-notifier/package-data-downloads/partial/webdin32.exe
+  extracting fontinst.exe
+  extracting Webdings.TTF
+  extracting fontinst.inf
+  extracting Licen.TXT
+
+All done, no errors.
+All fonts downloaded and installed.
+Processing triggers for man-db (2.12.0-4build2) ...
+Not building database; man-db/auto-update is not 'true'.
+Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  fonts-wine
+0 upgraded, 1 newly installed, 0 to remove and 45 not upgraded.
+Need to get 211 kB of archives.
+After this operation, 1019 kB of additional disk space will be used.
+Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wine all 9.0~repack-4build3 [211 kB]
+Fetched 211 kB in 0s (2054 kB/s)
+Selecting previously unselected package fonts-wine.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 239528 files and directories currently installed.)
+Preparing to unpack .../fonts-wine_9.0~repack-4build3_all.deb ...
+Unpacking fonts-wine (9.0~repack-4build3) ...
+Setting up fonts-wine (9.0~repack-4build3) ...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Suggested packages:
+  fonts-freefont-otf | fonts-freefont-ttf fonts-texgyre
+The following NEW packages will be installed:
+  fonts-urw-base35
+0 upgraded, 1 newly installed, 0 to remove and 45 not upgraded.
+Need to get 11.0 MB of archives.
+After this operation, 15.9 MB of additional disk space will be used.
+Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+Get:2 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-urw-base35 all 20200910-8 [11.0 MB]
+Fetched 11.0 MB in 0s (56.9 MB/s)
+Selecting previously unselected package fonts-urw-base35.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 239601 files and directories currently installed.)
+Preparing to unpack .../fonts-urw-base35_20200910-8_all.deb ...
+Unpacking fonts-urw-base35 (20200910-8) ...
+Setting up fonts-urw-base35 (20200910-8) ...
+Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Recommended packages:
+  fonts-texgyre-math
+The following NEW packages will be installed:
+  fonts-texgyre
+0 upgraded, 1 newly installed, 0 to remove and 45 not upgraded.
+Need to get 8350 kB of archives.
+After this operation, 14.5 MB of additional disk space will be used.
+Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-texgyre all 20180621-6 [8350 kB]
+Fetched 8350 kB in 0s (23.9 MB/s)
+Selecting previously unselected package fonts-texgyre.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 239783 files and directories currently installed.)
+Preparing to unpack .../fonts-texgyre_20180621-6_all.deb ...
+Unpacking fonts-texgyre (20180621-6) ...
+Setting up fonts-texgyre (20180621-6) ...
+Processing triggers for tex-common (6.18) ...
+Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+mapnik 300100
+
+===== 12:32:12 Getting OpenTopoMap style
+OpenTopoMap commit 60c50cb8329d67c8556cd9f25b4a8e50bfc19c91 (Thu Jan 29 23:24:07 2026 +0100)
+patched: osm2pgsql style (locked, 4wd_only, smoothness, motor_vehicle)
+patched: viewpoints without direction
+patched: viewpoint symbols always drawn
+patched: zoom 14: unknown tracktype without grade2
+patched: zoom 15+: unknown tracktype without grade2
+patched: zoom 14: grade2/3/4
+patched: zoom 14: grade5
+patched: zoom 15: grade2/3/4
+patched: zoom 15: grade5
+patched: paths on zoom 14 dotted (7 rules)
+patched: paths and tracks two zoom levels earlier (16 rules)
+patched: roads layer: exclude faded ways
+patched: roads layer: close condition
+patched: road names: drop replaced ways
+patched: road names: close condition
+patched: LIST transport segments, variant C
+patched: LIST small streams
+patched: faded-way layer
+patched: public parking from zoom 14
+patched: grey edges on nature reserve borders
+patched: contour numbers without halo (4 rules)
+patched: notable single trees from zoom 12
+patched: trail names from zoom 14
+patched: forest without tree symbols
+patched: OSM forest/scrub off (15 rules)
+patched: TASVEG vegetation layer
+patched: TASVEG notable trees
+patched: camp sites and locked gates on top
+written: overlay-walks.xml
+written: overlay-walkability.xml
+
+===== 12:32:13 Starting PostgreSQL
+NOTICE:  database "gis" does not exist, skipping
+NOTICE:  database "contours" does not exist, skipping
+
+===== 12:32:21 Downloading and clipping OSM data
+----- 12:32:22 cached OSM extract osm-a3d6eec323-20261103.osm.pbf is 9 days old, downloading new data
+HTTP 403: Resource not accessible by integration (https://uploads.github.com/repos/lorenzdenk/lorimaps-render/releases/418734634/assets?label=&name=osm-a3d6eec323-20261112.osm.pbf)
+WARN: cache upload failed
+HTTP 403: Resource not accessible by integration (https://api.github.com/repos/lorenzdenk/lorimaps-render/releases/assets/705174946)
+-rw-r--r-- 1 runner runner 51951739 Nov 12 12:33 region.osm.pbf
+
+===== 12:33:57 Importing OSM data (osm2pgsql)
+2026-11-12 12:33:57  osm2pgsql version 1.11.0
+2026-11-12 12:33:57  Database version: 16.15 (Ubuntu 16.15-1.pgdg24.04+2)
+2026-11-12 12:33:57  PostGIS version: 3.4
+2026-11-12 12:33:57  Storing properties to table '"public"."osm2pgsql_properties"'.
+2026-11-12 12:33:57  Setting up table 'planet_osm_point'
+2026-11-12 12:33:57  Setting up table 'planet_osm_line'
+2026-11-12 12:33:57  Setting up table 'planet_osm_polygon'
+2026-11-12 12:33:57  Setting up table 'planet_osm_roads'
+Processing: Node(3770k 3770.0k/s) Way(0k 0.00k/s) Relation(0 0.0/s)Processing: Node(5170k 2585.0k/s) Way(0k 0.00k/s) Relation(0 0.0/s)Processing: Node(6030k 2010.0k/s) Way(0k 0.00k/s) Relation(0 0.0/s)Processing: Node(7150k 1787.5k/s) Way(0k 0.00k/s) Relation(0 0.0/s)Processing: Node(7990k 1598.0k/s) Way(0k 0.00k/s) Relation(0 0.0/s)Processing: Node(8398k 1049.8k/s) Way(1k 1.00k/s) Relation(0 0.0/s)Processing: Node(8398k 1049.8k/s) Way(9k 9.00k/s) Relation(0 0.0/s)Processing: Node(8398k 1049.8k/s) Way(51k 25.50k/s) Relation(0 0.0/s)Processing: Node(8398k 1049.8k/s) Way(149k 49.67k/s) Relation(0 0.0/s)Processing: Node(8398k 1049.8k/s) Way(234k 58.50k/s) Relation(0 0.0/s)Processing: Node(8398k 1049.8k/s) Way(344k 68.80k/s) Relation(0 0.0/s)Processing: Node(8398k 1049.8k/s) Way(446k 74.33k/s) Relation(0 0.0/s)Processing: Node(8398k 1049.8k/s) Way(563k 80.43k/s) Relation(0 0.0/s)Processing: Node(8398k 1049.8k/s) Way(572k 81.71k/s) Relation(130 130.0/s)Processing: Node(8398k 1049.8k/s) Way(572k 81.71k/s) Relation(1010 505.0/s)Processing: Node(8398k 1049.8k/s) Way(572k 81.71k/s) Relation(2160 720.0/s)Processing: Node(8398k 1049.8k/s) Way(572k 81.71k/s) Relation(3980 995.0/s)Processing: Node(8398k 1049.8k/s) Way(572k 81.71k/s) Relation(5180 1036.0/s)Processing: Node(8398k 1049.8k/s) Way(572k 81.71k/s) Relation(8310 1385.0/s)                                                                                          2026-11-12 12:34:18  Reading input files done in 21s.
+2026-11-12 12:34:18    Processed 8398160 nodes in 8s - 1050k/s
+2026-11-12 12:34:18    Processed 572590 ways in 7s - 82k/s
+2026-11-12 12:34:18    Processed 8402 relations in 6s - 1k/s
+2026-11-12 12:34:19  Clustering table 'planet_osm_line' by geometry...
+2026-11-12 12:34:19  Clustering table 'planet_osm_point' by geometry...
+2026-11-12 12:34:19  Clustering table 'planet_osm_roads' by geometry...
+2026-11-12 12:34:19  Clustering table 'planet_osm_polygon' by geometry...
+2026-11-12 12:34:19  Creating geometry index on table 'planet_osm_point'...
+2026-11-12 12:34:19  Creating osm_id index on table 'planet_osm_point'...
+2026-11-12 12:34:19  Analyzing table 'planet_osm_point'...
+2026-11-12 12:34:20  Done postprocessing on table 'planet_osm_nodes' in 0s
+2026-11-12 12:34:20  Creating geometry index on table 'planet_osm_roads'...
+2026-11-12 12:34:20  Building index on table 'planet_osm_ways'
+2026-11-12 12:34:20  Creating osm_id index on table 'planet_osm_roads'...
+2026-11-12 12:34:20  Analyzing table 'planet_osm_roads'...
+2026-11-12 12:34:20  Building index on table 'planet_osm_rels'
+2026-11-12 12:34:21  Creating geometry index on table 'planet_osm_line'...
+2026-11-12 12:34:21  Creating geometry index on table 'planet_osm_polygon'...
+2026-11-12 12:34:21  Creating osm_id index on table 'planet_osm_line'...
+2026-11-12 12:34:22  Analyzing table 'planet_osm_line'...
+2026-11-12 12:34:22  Creating osm_id index on table 'planet_osm_polygon'...
+2026-11-12 12:34:22  Analyzing table 'planet_osm_polygon'...
+2026-11-12 12:34:25  Done postprocessing on table 'planet_osm_ways' in 5s
+2026-11-12 12:34:25  Done postprocessing on table 'planet_osm_rels' in 0s
+2026-11-12 12:34:25  All postprocessing on table 'planet_osm_point' done in 0s.
+2026-11-12 12:34:25  All postprocessing on table 'planet_osm_line' done in 2s.
+2026-11-12 12:34:25  All postprocessing on table 'planet_osm_polygon' done in 3s.
+2026-11-12 12:34:25  All postprocessing on table 'planet_osm_roads' done in 0s.
+2026-11-12 12:34:25  Storing properties to table '"public"."osm2pgsql_properties"'.
+2026-11-12 12:34:25  osm2pgsql took 28s overall.
+
+===== 12:34:25 Importing TASVEG vegetation
+TASVEG source: ./tasveg_kompakt.gpkg
+psql:classes.sql:1: NOTICE:  table "tasveg_class" does not exist, skipping
+NOTICE:  table "tasveg" does not exist, skipping
+NOTICE:  table "tasveg_low" does not exist, skipping
+NOTICE:  table "tasveg_notable" does not exist, skipping
+TASVEG pieces by class A: 1=46380, 2=34581, 3=75209, 4=96665, 5=29518, 6=140005, 7=51559, 8=58444
+woodland;-42.23013412156497;147.9373385796613
+tree;-42.60655522759999;146.9212983750293
+woodland pieces: 19413, notable tree points: 16979
+
+===== 12:36:20 Importing LIST transport segments (variant C)
+using cached LIST data list-transport-tas-20261110.geojson.gz (2 days old)
+NOTICE:  table "list_walk" does not exist, skipping
+NOTICE:  table "list_all" does not exist, skipping
+LIST segments: Road/Access Road=116363, Road/Local Road=59234, Road/Vehicular Track=54208, Road/Collector Road=13538, Road/National/State Highway=8237, Road/Arterial Road=7859, Road/Sub Arterial Road=7853, Track/Walking=7122, Rail/Railway=1747, Road/Not Applicable=1522, Track/Bike=1263, Track/Shared Use Bike/Walking=1158, Track/AS2156 Track Class 3 (PWS)=894, Track/AS2156 Track Class 4 (PWS)=835, Rail/Railway Siding=314, Track/Horse Trail=309, Track/AS2156 Track Class 2 (PWS)=279, Track/AS2156 Track Class 5 (PWS)=171, Track/AS2156 Track Class 6 (PWS)=87, Track/AS2156 Track Class 1 (PWS)=78, Road/Mall=37, Road/Arcade=33, Track/Shared Use Track=26, Route/Ferry=11, Rail/Tramway=2, Track/Not Applicable=1, Route/Walking=1
+LIST surfaces: Unsealed=171497, Sealed=102260, 4WD required=5559, Not Applicable=3597, Boardwalk=260, Fabricated Surface=9
+OSM paths duplicated by LIST: 9060 of 22021
+OSM tracks duplicated by LIST: 5645 of 16215
+NOTICE:  table "list_road" does not exist, skipping
+NOTICE:  table "osm_road" does not exist, skipping
+NOTICE:  table "list_road_ins" does not exist, skipping
+roads drawn with the LIST line: 196815, 40429 km, classes: Access Road, Arcade, Arterial Road, Collector Road, Local Road, Mall, National/State Highway, Sub Arterial Road
+OSM roads kept (not in LIST): 4391
+LIST vehicular tracks kept as OSM footway: 1773
+OSM tracks drawn as grade 3: 4625
+
+===== 12:44:48 Importing LIST rivers and lakes
+LIST hydro_lines from release list-data
+LIST hydro_areas from release list-data
+LIST waterways: canal=2250, ditch=34554, list_indef=6795, list_minor=469141, river=11811, stream=71804
+LIST water areas: 125218
+
+===== 12:45:59 Importing walk data (overlay)
+NOTICE:  table "gsw_walks" does not exist, skipping
+NOTICE:  table "gsw_spec" does not exist, skipping
+NOTICE:  table "gsw_tracks" does not exist, skipping
+NOTICE:  table "gsw_manual" does not exist, skipping
+NOTICE:  table "gsw_list" does not exist, skipping
+NOTICE:  table "gsw_osm" does not exist, skipping
+NOTICE:  table "gsw_tracks" does not exist, skipping
+big tree hikes: 10
+great short walks found: 56 (1 LIST 2142 m, 2 LIST 965 m, 3 OSM 570 m, 4 LIST 2069 m, 5 LIST+OSM 5064 m, 6 LIST 7650 m, 7 LIST 3390 m, 8 LIST 13565 m, 9 LIST 10204 m, 10 LIST 2215 m, 11 LIST 157 m, 12 LIST 3878 m, 13 LIST 680 m, 14 LIST 3817 m, 15 LIST 1435 m, 16 LIST 870 m, 17 LIST 919 m, 18 LIST 2197 m, 19 LIST 17145 m, 20 LIST+OSM 7962 m, 21 LIST 11394 m, 22 LIST 1134 m, 23 LIST 1048 m, 24 LIST 653 m, 25 LIST 5910 m, 26 LIST 1277 m, 27 LIST 13679 m, 28 LIST 384 m, 29 LIST 5649 m, 30 LIST 988 m, 31 LIST 6020 m, 32 LIST 1053 m, 34 LIST 2355 m, 35 LIST 1377 m, 36 LIST 1429 m, 37 LIST 810 m, 38 LIST 3303 m, 39 OSM 3590 m, 40 LIST 2613 m, 41 LIST 2663 m, 42 LIST 3889 m, 43 LIST 454 m, 44 LIST 5315 m, 48 LIST 299 m, 49 LIST 562 m, 50 LIST 580 m, 51 LIST 2022 m, 52 LIST 3153 m, 53 manual 1034 m, 54 LIST 580 m, 55 LIST 2524 m, 56 LIST 12102 m, 57 LIST 904 m, 58 LIST 3962 m, 59 LIST+OSM 251 m, 60 LIST 1598 m)
+great short walks not found in this area: 33 Calcified Forest, 45 Castle Rock, 46 Trousers Point, 47 Strzelecki Peaks
+
+===== 12:46:02 Downloading Copernicus GLO-30 DEM
+  Copernicus_DSM_COG_10_S44_00_E144_00_DEM
+curl: (22) The requested URL returned error: 404
+  (not available, probably sea)
+  Copernicus_DSM_COG_10_S44_00_E145_00_DEM
+  Copernicus_DSM_COG_10_S44_00_E146_00_DEM
+  Copernicus_DSM_COG_10_S44_00_E147_00_DEM
+  Copernicus_DSM_COG_10_S44_00_E148_00_DEM
+  Copernicus_DSM_COG_10_S43_00_E144_00_DEM
+curl: (22) The requested URL returned error: 404
+  (not available, probably sea)
+  Copernicus_DSM_COG_10_S43_00_E145_00_DEM
+  Copernicus_DSM_COG_10_S43_00_E146_00_DEM
+  Copernicus_DSM_COG_10_S43_00_E147_00_DEM
+  Copernicus_DSM_COG_10_S43_00_E148_00_DEM
+  Copernicus_DSM_COG_10_S42_00_E144_00_DEM
+  Copernicus_DSM_COG_10_S42_00_E145_00_DEM
+  Copernicus_DSM_COG_10_S42_00_E146_00_DEM
+  Copernicus_DSM_COG_10_S42_00_E147_00_DEM
+  Copernicus_DSM_COG_10_S42_00_E148_00_DEM
+  Copernicus_DSM_COG_10_S41_00_E144_00_DEM
+  Copernicus_DSM_COG_10_S41_00_E145_00_DEM
+  Copernicus_DSM_COG_10_S41_00_E146_00_DEM
+  Copernicus_DSM_COG_10_S41_00_E147_00_DEM
+  Copernicus_DSM_COG_10_S41_00_E148_00_DEM
+
+===== 12:46:33 Processing DEM (warp, hillshade, relief, contours)
+LIST hillshade: mean 169.7 sd 46.2; OTM hillshade: mean 171.6 sd 34.0
+written hillshade-list.tif
+using LIST hillshade
+LIST contours from release list-data
+ contour lines: 517063
+
+total 1532004
+drwxr-xr-x  2 runner runner      4096 Nov 12 12:49 .
+drwxr-xr-x 10 runner runner      4096 Nov 12 12:32 ..
+lrwxrwxrwx  1 runner runner         7 Nov 12 12:46 dem-srtm.tiff -> raw.tif
+-rw-r--r--  1 runner runner     81308 Nov 12 12:49 hillshade-1000.tif
+-rw-r--r--  1 runner runner 656439795 Nov 12 12:49 hillshade-30m-jpeg.tif
+-rw-r--r--  1 runner runner    295777 Nov 12 12:49 hillshade-500.tif
+-rw-r--r--  1 runner runner      5048 Nov 12 12:49 hillshade-5000.tif
+-rw-r--r--  1 runner runner    142924 Nov 12 12:49 hillshade-700.tif
+-rw-r--r--  1 runner runner   7138222 Nov 12 12:49 hillshade-90.tif
+-rw-r--r--  1 runner runner 346356162 Nov 12 12:46 raw.tif
+-rw-r--r--  1 runner runner   1558547 Nov 12 12:49 relief-500.tif
+-rw-r--r--  1 runner runner     27828 Nov 12 12:49 relief-5000.tif
+-rw-r--r--  1 runner runner      8845 Nov 12 12:46 src.vrt
+-rw-r--r--  1 runner runner    564182 Nov 12 12:46 warp-1000.tif
+-rw-r--r--  1 runner runner 493832167 Nov 12 12:47 warp-30.tif
+-rw-r--r--  1 runner runner   2126585 Nov 12 12:46 warp-500.tif
+-rw-r--r--  1 runner runner     28710 Nov 12 12:46 warp-5000.tif
+-rw-r--r--  1 runner runner   1115457 Nov 12 12:46 warp-700.tif
+-rw-r--r--  1 runner runner  58993405 Nov 12 12:47 warp-90.tif
+
+===== 12:51:30 Water polygons
+----- 12:51:32 using cached sea polygons (21 days old)
+
+===== 12:51:32 OpenTopoMap preprocessing
+saddledirection.c: In function ‘interpolate_direction’:
+saddledirection.c:96:5: warning: ignoring return value of ‘GDALRasterIO’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+   96 |     GDALRasterIO(hBand,GF_Read,xpx,ypx,2,2,area2x2,2,2,GDT_Int16,0,0);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+isolation.c: In function ‘get_height’:
+isolation.c:103:2: warning: ignoring return value of ‘GDALRasterIO’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  103 |  GDALRasterIO(hBand,GF_Read,xpx,ypx,2,2,area2x2,2,2,GDT_Int16,0,0);
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+isolation.c: In function ‘get_isolation_by_DEM’:
+isolation.c:187:3: warning: ignoring return value of ‘GDALRasterIO’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  187 |   GDALRasterIO(hBand,GF_Read,le,up,w,h,DEMarea,w,h,GDT_Int16,0,0);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NOTICE:  column "hiking" of relation "planet_osm_point" already exists, skipping
+NOTICE:  column "hiking" of relation "planet_osm_polygon" already exists, skipping
+NOTICE:  column "direction" of relation "planet_osm_point" already exists, skipping
+NOTICE:  type "otm_al_grid" does not exist, skipping
+NOTICE:  database "lowzoom" does not exist, skipping
+CREATE EXTENSION
+CREATE EXTENSION
+ERROR:  role "tirex" does not exist
+NOTICE:  extension "dblink" already exists, skipping
+CREATE EXTENSION
+Simplifying water polygons...
+CREATE VIEW
+CREATE TABLE
+INSERT 0 2643
+CREATE INDEX
+Simplifying landuse polygons...
+CREATE VIEW
+CREATE TABLE
+INSERT 0 4791
+CREATE INDEX
+Simplifying roads...
+CREATE VIEW
+CREATE TABLE
+INSERT 0 44749
+CREATE INDEX
+Simplifying borders...
+CREATE VIEW
+CREATE TABLE
+INSERT 0 609
+CREATE INDEX
+Simplifying railways...
+CREATE VIEW
+CREATE TABLE
+INSERT 0 254
+CREATE INDEX
+Simplifying cities and towns...
+CREATE VIEW
+CREATE TABLE
+INSERT 0 15
+CREATE INDEX
+Create lines for labels of water polygons...
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE TABLE
+lowzoom_lakelabel...
+INSERT 0 12106
+lowzoom_baylabel...
+INSERT 0 11
+lowzoom_straitplabel...
+INSERT 0 2
+lowzoom_straitllabel...
+INSERT 0 7
+lowzoom_glacierlabel...
+INSERT 0 0
+create index...
+CREATE INDEX
+Create lines for labels of natural areas...
+NOTICE:  view "lowzoom_natural_lines" does not exist, skipping
+DROP VIEW
+NOTICE:  view "lowzoom_natural_areas" does not exist, skipping
+DROP VIEW
+CREATE VIEW
+CREATE VIEW
+CREATE TABLE
+INSERT 0 42
+INSERT 0 10
+CREATE INDEX
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+UPDATE 1
+update_parking: update planet_osm_polygon Thu Nov 12 12:52:37 UTC 2026
+UPDATE 645
+update_parking: update planet_osm_point Thu Nov 12 12:52:39 UTC 2026
+UPDATE 110
+update_parking: exporting polygon Thu Nov 12 12:52:39 UTC 2026
+update_parking: exporting point Thu Nov 12 12:52:39 UTC 2026
+update_parking: isolations of points Thu Nov 12 12:52:39 UTC 2026
+update_parking: isolations of polygons Thu Nov 12 12:52:39 UTC 2026
+update_parking: updating DB Thu Nov 12 12:52:39 UTC 2026
+update_parking: finish Thu Nov 12 12:52:39 UTC 2026
+
+===== 12:52:51 Vector map
+----- 12:52:51 Mapnik style with everything resolved
+Mapnik LOG> 2026-11-12 12:52:51: warning: unable to find face-name 'Unifont Medium' in FontSet 'serif-book'
+Mapnik LOG> 2026-11-12 12:52:51: warning: unable to find face-name 'Unifont Medium' in FontSet 'sans-book'
+Mapnik LOG> 2026-11-12 12:52:51: warning: unable to find face-name 'Unifont Medium' in FontSet 'sans-condensed'
+Mapnik LOG> 2026-11-12 12:52:51: warning: unable to find face-name 'Unifont Medium' in FontSet 'sans-condensed-oblique'
+Mapnik LOG> 2026-11-12 12:52:51: warning: unable to find face-name 'Unifont Medium' in FontSet 'sans-extralight'
+Mapnik LOG> 2026-11-12 12:52:51: warning: unable to find face-name 'Unifont Medium' in FontSet 'sans-condensed-bold'
+Mapnik LOG> 2026-11-12 12:52:51: warning: unable to find face-name 'Unifont Medium' in FontSet 'sans-oblique'
+layers: 76
+----- 12:52:52 Layers of the vector tiles
+own-list-names                   dims [1] kinds ['geom'] k 13..19 2 columns
+own-list-surface                 dims [1] kinds ['geom'] k 14..19 1 columns
+own-list-private                 dims [1] kinds ['geom'] k 14..19 1 columns
+----- 12:52:59 Style, sprite and fonts (firasans)
+679 layers {'background': 1, 'raster': 2, 'fill': 46, 'line': 440, 'symbol': 190}, 148 sprite images, fonts ['FiraSans-Bold', 'FiraSans-Italic', 'FiraSans-Light', 'FiraSans-Regular'], 328 symbolizers not translated
+style.json: 754 KB
+FiraSans-Bold=/home/runner/work/vector/fonts/FiraSans-Bold.ttf,/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf
+FiraSans-Italic=/home/runner/work/vector/fonts/FiraSans-Italic.ttf,/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf
+FiraSans-Light=/home/runner/work/vector/fonts/FiraSans-Light.ttf,/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf
+FiraSans-Regular=/home/runner/work/vector/fonts/FiraSans-Regular.ttf,/usr/share/fonts/truetype/noto/NotoSans-Regular.ttf
+FiraSans-Bold: 27 ranges, 1.2 MB
+FiraSans-Italic: 27 ranges, 1.2 MB
+FiraSans-Light: 27 ranges, 1.1 MB
+FiraSans-Regular: 27 ranges, 1.2 MB
+----- 12:53:07 Vector tiles, zoom 0-14
+45018 tiles, zoom 0-14
+  500/45018 tiles, 1.4 min, 5.8 tiles/s, 0 errors
+  1000/45018 tiles, 2.3 min, 7.3 tiles/s, 0 errors
+  1500/45018 tiles, 2.9 min, 8.5 tiles/s, 0 errors
+  2000/45018 tiles, 3.7 min, 9.0 tiles/s, 0 errors
+  2500/45018 tiles, 4.5 min, 9.3 tiles/s, 0 errors
+  3000/45018 tiles, 5.1 min, 9.8 tiles/s, 0 errors
+  3500/45018 tiles, 5.6 min, 10.4 tiles/s, 0 errors
+  4000/45018 tiles, 6.2 min, 10.8 tiles/s, 0 errors
+  4500/45018 tiles, 6.8 min, 11.1 tiles/s, 0 errors
+  5000/45018 tiles, 7.4 min, 11.3 tiles/s, 0 errors
+  5500/45018 tiles, 8.0 min, 11.5 tiles/s, 0 errors
+  6000/45018 tiles, 8.6 min, 11.6 tiles/s, 0 errors
+  6500/45018 tiles, 9.3 min, 11.7 tiles/s, 0 errors
+  7000/45018 tiles, 9.9 min, 11.8 tiles/s, 0 errors
+  7500/45018 tiles, 10.5 min, 11.9 tiles/s, 0 errors
+  8000/45018 tiles, 11.1 min, 12.0 tiles/s, 0 errors
+  8500/45018 tiles, 11.7 min, 12.1 tiles/s, 0 errors
+  9000/45018 tiles, 12.3 min, 12.2 tiles/s, 0 errors
+  9500/45018 tiles, 12.9 min, 12.2 tiles/s, 0 errors
+  10000/45018 tiles, 13.5 min, 12.3 tiles/s, 0 errors
+  10500/45018 tiles, 14.1 min, 12.4 tiles/s, 0 errors
+  11000/45018 tiles, 14.7 min, 12.5 tiles/s, 0 errors
+  11500/45018 tiles, 15.2 min, 12.6 tiles/s, 0 errors
+  12000/45018 tiles, 15.7 min, 12.7 tiles/s, 0 errors
+  12500/45018 tiles, 16.2 min, 12.8 tiles/s, 0 errors
+  13000/45018 tiles, 16.7 min, 12.9 tiles/s, 0 errors
+  13500/45018 tiles, 17.3 min, 13.0 tiles/s, 0 errors
+  14000/45018 tiles, 17.8 min, 13.1 tiles/s, 0 errors
+  14500/45018 tiles, 18.3 min, 13.2 tiles/s, 0 errors
+  15000/45018 tiles, 18.8 min, 13.3 tiles/s, 0 errors
+  15500/45018 tiles, 19.3 min, 13.4 tiles/s, 0 errors
+  16000/45018 tiles, 19.8 min, 13.5 tiles/s, 0 errors
+  16500/45018 tiles, 20.3 min, 13.5 tiles/s, 0 errors
+  17000/45018 tiles, 20.8 min, 13.6 tiles/s, 0 errors
+  17500/45018 tiles, 21.4 min, 13.7 tiles/s, 0 errors
+  18000/45018 tiles, 21.9 min, 13.7 tiles/s, 0 errors
+  18500/45018 tiles, 22.5 min, 13.7 tiles/s, 0 errors
+  19000/45018 tiles, 23.0 min, 13.8 tiles/s, 0 errors
+  19500/45018 tiles, 23.6 min, 13.8 tiles/s, 0 errors
+  20000/45018 tiles, 24.1 min, 13.8 tiles/s, 0 errors
+  20500/45018 tiles, 24.7 min, 13.9 tiles/s, 0 errors
+  21000/45018 tiles, 25.2 min, 13.9 tiles/s, 0 errors
+  21500/45018 tiles, 25.8 min, 13.9 tiles/s, 0 errors
+  22000/45018 tiles, 26.3 min, 13.9 tiles/s, 0 errors
+  22500/45018 tiles, 26.9 min, 13.9 tiles/s, 0 errors
+  23000/45018 tiles, 27.4 min, 14.0 tiles/s, 0 errors
+  23500/45018 tiles, 28.0 min, 14.0 tiles/s, 0 errors
+  24000/45018 tiles, 28.6 min, 14.0 tiles/s, 0 errors
+  24500/45018 tiles, 29.1 min, 14.0 tiles/s, 0 errors
+  25000/45018 tiles, 29.7 min, 14.0 tiles/s, 0 errors
+  25500/45018 tiles, 30.2 min, 14.1 tiles/s, 0 errors
+  26000/45018 tiles, 30.8 min, 14.1 tiles/s, 0 errors
+  26500/45018 tiles, 31.4 min, 14.1 tiles/s, 0 errors
+  27000/45018 tiles, 31.9 min, 14.1 tiles/s, 0 errors
+  27500/45018 tiles, 32.5 min, 14.1 tiles/s, 0 errors
+  28000/45018 tiles, 33.1 min, 14.1 tiles/s, 0 errors
+  28500/45018 tiles, 33.6 min, 14.1 tiles/s, 0 errors
+  29000/45018 tiles, 34.2 min, 14.1 tiles/s, 0 errors
+  29500/45018 tiles, 34.7 min, 14.2 tiles/s, 0 errors
+  30000/45018 tiles, 35.3 min, 14.2 tiles/s, 0 errors
+  30500/45018 tiles, 35.8 min, 14.2 tiles/s, 0 errors
+  31000/45018 tiles, 36.4 min, 14.2 tiles/s, 0 errors
+  31500/45018 tiles, 36.9 min, 14.2 tiles/s, 0 errors
+  32000/45018 tiles, 37.5 min, 14.2 tiles/s, 0 errors
+  32500/45018 tiles, 38.0 min, 14.2 tiles/s, 0 errors
+  33000/45018 tiles, 38.6 min, 14.3 tiles/s, 0 errors
+  33500/45018 tiles, 39.1 min, 14.3 tiles/s, 0 errors
+  34000/45018 tiles, 39.7 min, 14.3 tiles/s, 0 errors
+  34500/45018 tiles, 40.3 min, 14.3 tiles/s, 0 errors
+  35000/45018 tiles, 40.8 min, 14.3 tiles/s, 0 errors
+  35500/45018 tiles, 41.4 min, 14.3 tiles/s, 0 errors
+  36000/45018 tiles, 42.0 min, 14.3 tiles/s, 0 errors
+  36500/45018 tiles, 42.5 min, 14.3 tiles/s, 0 errors
+  37000/45018 tiles, 43.0 min, 14.3 tiles/s, 0 errors
+  37500/45018 tiles, 43.6 min, 14.3 tiles/s, 0 errors
+  38000/45018 tiles, 44.1 min, 14.3 tiles/s, 0 errors
+  38500/45018 tiles, 44.7 min, 14.4 tiles/s, 0 errors
+  39000/45018 tiles, 45.2 min, 14.4 tiles/s, 0 errors
+  39500/45018 tiles, 45.8 min, 14.4 tiles/s, 0 errors
+  40000/45018 tiles, 46.3 min, 14.4 tiles/s, 0 errors
+  40500/45018 tiles, 46.9 min, 14.4 tiles/s, 0 errors
+  41000/45018 tiles, 47.4 min, 14.4 tiles/s, 0 errors
+  41500/45018 tiles, 48.0 min, 14.4 tiles/s, 0 errors
+  42000/45018 tiles, 48.5 min, 14.4 tiles/s, 0 errors
+  42500/45018 tiles, 49.1 min, 14.4 tiles/s, 0 errors
+  43000/45018 tiles, 49.6 min, 14.5 tiles/s, 0 errors
+  43500/45018 tiles, 50.1 min, 14.5 tiles/s, 0 errors
+  44000/45018 tiles, 50.6 min, 14.5 tiles/s, 0 errors
+  44500/45018 tiles, 51.2 min, 14.5 tiles/s, 0 errors
+  45000/45018 tiles, 51.7 min, 14.5 tiles/s, 0 errors
+45018 tiles in 51.7 min, 0 errors, 983.4 MB compressed
+  z0: 1 tiles, 0.00 MB, 1.1 KB per tile
+  z1: 1 tiles, 0.00 MB, 1.8 KB per tile
+  z2: 1 tiles, 0.00 MB, 3.8 KB per tile
+  z3: 2 tiles, 0.18 MB, 85.6 KB per tile
+  z4: 2 tiles, 0.54 MB, 264.2 KB per tile
+  z5: 4 tiles, 1.84 MB, 450.4 KB per tile
+  z6: 4 tiles, 3.53 MB, 862.7 KB per tile
+  z7: 6 tiles, 5.95 MB, 968.2 KB per tile
+  z8: 16 tiles, 7.78 MB, 474.9 KB per tile
+  z9: 49 tiles, 17.44 MB, 347.6 KB per tile
+  z10: 156 tiles, 66.82 MB, 418.3 KB per tile
+  z11: 552 tiles, 133.57 MB, 236.3 KB per tile
+  z12: 2160 tiles, 180.90 MB, 81.8 KB per tile
+  z13: 8448 tiles, 241.77 MB, 27.9 KB per tile
+  z14: 33616 tiles, 323.10 MB, 9.4 KB per tile
+written /home/runner/work/lorimaps-vector-render/lorimaps-vector-render/out/tasmania-vector.mbtiles (1009.7 MB)
+----- 13:44:48 Relief colours and hillshade (raster tiles)
+relief: 21 of 21 tiles, 0.1 MB, 0.0 min -> /home/runner/work/lorimaps-vector-render/lorimaps-vector-render/out/tasmania-relief.mbtiles
+hillshade: 2954 of 2954 tiles, 368.2 MB, 2.9 min -> /home/runner/work/lorimaps-vector-render/lorimaps-vector-render/out/tasmania-hillshade.mbtiles
+----- 13:47:41 Style package
+total 1351288
+drwxr-xr-x 2 runner runner       4096 Nov 12 13:47 .
+drwxr-xr-x 8 runner runner       4096 Nov 12 12:31 ..
+-rw-r--r-- 1 runner runner  370372608 Nov 12 13:47 tasmania-hillshade.mbtiles
+-rw-r--r-- 1 runner runner     180224 Nov 12 13:44 tasmania-relief.mbtiles
+-rw-r--r-- 1 runner runner    3423454 Nov 12 13:47 tasmania-style.zip
+-rw-r--r-- 1 runner runner 1009721344 Nov 12 13:44 tasmania-vector.mbtiles
+----- 13:47:41 Check pictures
+written /home/runner/work/lorimaps-vector-render/lorimaps-vector-render/out/preview/Uebersicht-8.png
+written /home/runner/work/lorimaps-vector-render/lorimaps-vector-render/out/preview/Hobart-15.png
+written /home/runner/work/lorimaps-vector-render/lorimaps-vector-render/out/preview/Wellington-14.png
+written /home/runner/work/lorimaps-vector-render/lorimaps-vector-render/out/preview/Cradle-13.png
+written /home/runner/work/lorimaps-vector-render/lorimaps-vector-render/out/preview/Cradle-15.png
+written /home/runner/work/lorimaps-vector-render/lorimaps-vector-render/out/preview/Frenchmans-14.png
+written /home/runner/work/lorimaps-vector-render/lorimaps-vector-render/out/preview/Launceston-13.png
+written /home/runner/work/lorimaps-vector-render/lorimaps-vector-render/out/preview/Freycinet-12.png
+written /home/runner/work/lorimaps-vector-render/lorimaps-vector-render/out/preview/Suedwest-11.png
+written /home/runner/work/lorimaps-vector-render/lorimaps-vector-render/out/preview/Lake_StClair-16.png
+/home/runner/work/lorimaps-vector-render/lorimaps-vector-render/out:
+total 1351296
+drwxr-xr-x 3 runner runner       4096 Nov 12 13:48 .
+drwxr-xr-x 8 runner runner       4096 Nov 12 12:31 ..
+drwxr-xr-x 2 runner runner       4096 Nov 12 13:48 preview
+-rw-r--r-- 1 runner runner         88 Nov 12 13:48 samples-tasmania-otm.txt
+-rw-r--r-- 1 runner runner  370372608 Nov 12 13:47 tasmania-hillshade.mbtiles
+-rw-r--r-- 1 runner runner     180224 Nov 12 13:44 tasmania-relief.mbtiles
+-rw-r--r-- 1 runner runner    3423454 Nov 12 13:47 tasmania-style.zip
+-rw-r--r-- 1 runner runner 1009721344 Nov 12 13:44 tasmania-vector.mbtiles
+
+/home/runner/work/lorimaps-vector-render/lorimaps-vector-render/out/preview:
+total 14448
+drwxr-xr-x 2 runner runner    4096 Nov 12 13:48 .
+drwxr-xr-x 3 runner runner    4096 Nov 12 13:48 ..
+-rw-r--r-- 1 runner runner 2287873 Nov 12 13:47 Cradle-13.png
+-rw-r--r-- 1 runner runner 1589636 Nov 12 13:47 Cradle-15.png
+-rw-r--r-- 1 runner runner 2297656 Nov 12 13:47 Frenchmans-14.png
+-rw-r--r-- 1 runner runner  720064 Nov 12 13:47 Freycinet-12.png
+-rw-r--r-- 1 runner runner  867617 Nov 12 13:47 Hobart-15.png
+-rw-r--r-- 1 runner runner   90771 Nov 12 13:48 Lake_StClair-16.png
+-rw-r--r-- 1 runner runner 1608017 Nov 12 13:47 Launceston-13.png
+-rw-r--r-- 1 runner runner 1947129 Nov 12 13:48 Suedwest-11.png
+-rw-r--r-- 1 runner runner 1487558 Nov 12 13:47 Uebersicht-8.png
+-rw-r--r-- 1 runner runner 1871362 Nov 12 13:47 Wellington-14.png
+
+===== 13:48:01 Done
+total 1351296
+drwxr-xr-x 3 runner runner       4096 Nov 12 13:48 .
+drwxr-xr-x 8 runner runner       4096 Nov 12 12:31 ..
+drwxr-xr-x 2 runner runner       4096 Nov 12 13:48 preview
+-rw-r--r-- 1 runner runner         88 Nov 12 13:48 samples-tasmania-otm.txt
+-rw-r--r-- 1 runner runner  370372608 Nov 12 13:47 tasmania-hillshade.mbtiles
+-rw-r--r-- 1 runner runner     180224 Nov 12 13:44 tasmania-relief.mbtiles
+-rw-r--r-- 1 runner runner    3423454 Nov 12 13:47 tasmania-style.zip
+-rw-r--r-- 1 runner runner 1009721344 Nov 12 13:44 tasmania-vector.mbtiles
